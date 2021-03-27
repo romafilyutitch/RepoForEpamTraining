@@ -1,0 +1,2 @@
+2021-03-27 19:44:45.825 [main] ERROR by.epam.jwd.service.LogService - Объект Line { name = first Line, startPoint = Point { x = 1, y = 1}, end Point = Point { x = 1, y = 1}} не является фигурой first Line
+2021-03-27 19:44:45.967 [main] ERROR by.epam.jwd.service.LogService - Объект Square { name = Single squarefirst vertex = Point { x = 1, y = 1}, second vertex = Point { x = 1, y = 5}, third vertex = Point { x = 2, y = 1}, fourth vertext = Point { x = 2, y = 2} не явялется квадратом

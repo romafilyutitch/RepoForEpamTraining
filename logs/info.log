@@ -1,0 +1,7 @@
+2021-03-27 19:44:45.727 [main] INFO  by.epam.jwd.service.LogService - Point { x = 1, y = 1}
+2021-03-27 19:44:45.737 [main] INFO  by.epam.jwd.service.LogService - Point { x = 1, y = 5}
+2021-03-27 19:44:45.738 [main] INFO  by.epam.jwd.service.LogService - Point { x = 2, y = 1}
+2021-03-27 19:44:45.738 [main] INFO  by.epam.jwd.service.LogService - Point { x = 2, y = 2}
+2021-03-27 19:44:45.827 [main] INFO  by.epam.jwd.service.LogService - Line { name = second Line, startPoint = Point { x = 1, y = 1}, end Point = Point { x = 2, y = 1}}
+2021-03-27 19:44:45.894 [main] INFO  by.epam.jwd.service.LogService - Triangle { name = first Triangle, first vertext = Point { x = 1, y = 1}, second vertext = Point { x = 1, y = 5}, third vertex = Point { x = 2, y = 1}}
+2021-03-27 19:44:45.897 [main] INFO  by.epam.jwd.service.LogService - Triangle { name = second Triangle, first vertext = Point { x = 1, y = 1}, second vertext = Point { x = 2, y = 1}, third vertex = Point { x = 2, y = 2}}
