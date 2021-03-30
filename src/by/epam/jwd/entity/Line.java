@@ -20,7 +20,7 @@ public class Line extends Figure{
         return endPoint;
     }
 
-    public static Line getInstance(String name, Point startPoint, Point endPoint){
+    public static Line newInstance(String name, Point startPoint, Point endPoint){
         if(name == null || startPoint == null || endPoint == null){
             throw new IllegalArgumentException("Arguments must be not null");
         }

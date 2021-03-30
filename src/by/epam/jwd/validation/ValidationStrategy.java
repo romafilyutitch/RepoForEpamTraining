@@ -6,11 +6,9 @@ import by.epam.jwd.exception.CanNotExistException;
 import by.epam.jwd.exception.IsNotFigureException;
 import by.epam.jwd.exception.IsNotSquareException;
 
-public class Validator {
-    Validator(){}
-
-    public void check(Figure figure) throws CanNotExistException, IsNotSquareException, IsNotFigureException {
-        Point[] points = figure.getPoints();
+public interface ValidationStrategy {
+    void check(Figure figure) throws CanNotExistException, IsNotSquareException, IsNotFigureException;
+    default void checkPoints(Point[] points) throws IsNotFigureException{
         for (int i = 0; i < points.length; i++) {
             for (int j = i+1; j < points.length; j++) {
                 if(points[i].equals(points[j])){
@@ -20,11 +18,7 @@ public class Validator {
         }
     }
 
-    public static Validator getInstance(){
-        return new Validator();
-    }
-
-    boolean isSameX(Point[] points){
+    default boolean isSameX(Point[] points){
         final int xCoord = points[0].getX();
         int amountOfPointsOnSameX = 0;
         for (int i = 1; i < points.length; i++){
@@ -35,7 +29,7 @@ public class Validator {
         return amountOfPointsOnSameX == points.length;
     }
 
-    boolean isSameY(Point[] points){
+    default boolean isSameY(Point[] points){
         final int yCoord = points[0].getY();
         int amountOfPointsOnSameY = 0;
         for (int i = 1; i < points.length; i++) {

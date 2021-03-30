@@ -26,7 +26,7 @@ public class Triangle extends Figure {
         return thirdVertex;
     }
 
-    public static Triangle getInstance(String name, Point firstVertex, Point secondVertex, Point thirdVertex){
+    public static Triangle newInstance(String name, Point firstVertex, Point secondVertex, Point thirdVertex){
         if(name == null || firstVertex == null || secondVertex == null || thirdVertex == null){
             throw new IllegalArgumentException("Arguments must be not null");
         }

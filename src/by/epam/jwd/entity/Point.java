@@ -45,7 +45,7 @@ public class Point {
         return "Point { x = "+x+", y = "+y+"}";
     }
 
-    public static Point getInstance(int x, int y){
+    public static Point newInstance(int x, int y){
         if(x < 0 || y < 0){
             throw new IllegalArgumentException("arguments must be positive");
         }

@@ -4,16 +4,11 @@ import by.epam.jwd.entity.Figure;
 import by.epam.jwd.entity.Point;
 import by.epam.jwd.exception.CanNotExistException;
 import by.epam.jwd.exception.IsNotFigureException;
-import by.epam.jwd.exception.IsNotSquareException;
 
-public class TriangleValidator extends Validator{
-    TriangleValidator(){}
-    public static TriangleValidator getInstance(){
-        return new TriangleValidator();
-    }
+class TriangleValidationStrategy implements ValidationStrategy {
     @Override
-    public void check(Figure figure) throws CanNotExistException, IsNotFigureException, IsNotSquareException {
-        super.check(figure);
+    public void check(Figure figure) throws CanNotExistException, IsNotFigureException {
+        checkPoints(figure.getPoints());
         Point[] points = figure.getPoints();
         if(isSameX(points) || isSameY(points)){
             throw new CanNotExistException();

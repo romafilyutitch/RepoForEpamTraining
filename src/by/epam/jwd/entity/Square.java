@@ -32,7 +32,7 @@ public class Square extends Figure{
         return fourthVertex;
     }
 
-    public static Square getInstance(String name, Point firstVertex, Point secondVertex, Point thirdVertex, Point fourthVertex){
+    public static Square newInstance(String name, Point firstVertex, Point secondVertex, Point thirdVertex, Point fourthVertex){
         if(name == null || firstVertex == null || secondVertex == null || thirdVertex == null || fourthVertex == null){
             throw new IllegalArgumentException("Arguments must be not null");
         }

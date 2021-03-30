@@ -2,19 +2,15 @@ package by.epam.jwd.validation;
 
 import by.epam.jwd.entity.Figure;
 import by.epam.jwd.entity.Point;
-import by.epam.jwd.exception.CanNotExistException;
 import by.epam.jwd.exception.IsNotFigureException;
 import by.epam.jwd.exception.IsNotSquareException;
 
-public class SquareValidator extends Validator{
-    SquareValidator(){}
 
-    public static SquareValidator getInstance(){
-        return new SquareValidator();
-    }
+class SquareValidationStrategy implements ValidationStrategy {
+
     @Override
-    public void check(Figure figure) throws IsNotSquareException, IsNotFigureException, CanNotExistException {
-        super.check(figure);
+    public void check(Figure figure) throws IsNotSquareException, IsNotFigureException {
+        checkPoints(figure.getPoints());
         Point[] points = figure.getPoints();
         if(isSameX(points) || isSameX(points) || !isSquare(points)){
             throw new IsNotSquareException();
