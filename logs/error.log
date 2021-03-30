@@ -1,2 +1,2 @@
-2021-03-30 00:45:59.240 [main] ERROR by.epam.jwd.service.SimpleLogService - Объект Line { name = first Line, startPoint = Point { x = 1, y = 1}, end Point = Point { x = 1, y = 1}} не является фигурой first Line
-2021-03-30 00:45:59.354 [main] ERROR by.epam.jwd.service.SimpleLogService - Объект Square { name = Single squarefirst vertex = Point { x = 1, y = 1}, second vertex = Point { x = 1, y = 5}, third vertex = Point { x = 2, y = 1}, fourth vertext = Point { x = 2, y = 2} не явялется квадратом
+2021-03-30 20:30:44.744 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Line{ points = [Point { x = 1, y = 1}, Point { x = 1, y = 1}]} is not figure Line
+2021-03-30 20:30:44.754 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Square { points = [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}]} is not square

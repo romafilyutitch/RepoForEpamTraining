@@ -5,10 +5,10 @@ import by.epam.jwd.exception.CanNotExistException;
 import by.epam.jwd.exception.IsNotFigureException;
 import by.epam.jwd.exception.IsNotSquareException;
 
-class LineValidationStrategy implements ValidationStrategy {
+public class LineValidationStrategy implements ValidationStrategy {
 
     @Override
     public void check(Figure figure) throws CanNotExistException, IsNotSquareException, IsNotFigureException {
-        checkPoints(figure.getPoints());
+        checkIfContainsSamePoints(figure);
     }
 }

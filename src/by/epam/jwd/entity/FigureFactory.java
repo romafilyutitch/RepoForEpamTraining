@@ -1,2 +1,5 @@
-package by.epam.jwd.entity;public interface FigureFactory {
+package by.epam.jwd.entity;
+
+public interface FigureFactory {
+    Figure getFigure(Point... points);
 }

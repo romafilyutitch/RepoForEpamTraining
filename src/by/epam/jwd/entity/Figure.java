@@ -1,37 +1,36 @@
 package by.epam.jwd.entity;
 
+import java.util.Arrays;
+
 public abstract class Figure {
-    private String name;
+    private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "index out of bounds";
+    private Point[] points;
 
-    public Figure(String name){
-        this.name = name;
+    public Figure(Point[] points){
+        this.points = points;
     }
 
-    public String getName(){
-        return name;
+    public Point[] getPoints(){
+        return points;
     }
 
-    public abstract Point[] getPoints();
-
-    @Override
-    public boolean equals(Object obj){
-        if(this == obj){
-            return true;
+    public Point getPoint(int index){
+        if(index < 0 || index >= points.length){
+            throw new IndexOutOfBoundsException(INDEX_OUT_OF_BOUNDS_MESSAGE);
         }
-        if(obj == null || getClass() != obj.getClass()){
-            return false;
-        }
-        Figure other = (Figure) obj;
-        return name.equals(other.name);
+        return points[index];
     }
 
     @Override
-    public int hashCode(){
-        return name.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Figure figure = (Figure) o;
+        return Arrays.equals(points, figure.points);
     }
 
     @Override
-    public String toString(){
-        return name;
+    public int hashCode() {
+        return Arrays.hashCode(points);
     }
 }

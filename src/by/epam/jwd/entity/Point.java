@@ -7,6 +7,7 @@ public class Point {
     private static final int GROWTH_FACTOR = 16;
     private static Point[] pointsCache = new Point[16];
     private static int cachedPointsAmount = 0;
+    private final static String NEGATIVE_ARGUMENT_MESSAGE = "arguments must be positive";
     private int x;
     private int y;
 
@@ -23,31 +24,9 @@ public class Point {
         return y;
     }
 
-    @Override
-    public boolean equals(Object obj){
-        if(this == obj){
-            return true;
-        }
-        if(obj == null || getClass() != obj.getClass()){
-            return false;
-        }
-        Point other = (Point) obj;
-        return x == other.x && y == other.y;
-    }
-
-    @Override
-    public int hashCode(){
-        return Objects.hash(x,y);
-    }
-
-    @Override
-    public String toString(){
-        return "Point { x = "+x+", y = "+y+"}";
-    }
-
     public static Point newInstance(int x, int y){
         if(x < 0 || y < 0){
-            throw new IllegalArgumentException("arguments must be positive");
+            throw new IllegalArgumentException(NEGATIVE_ARGUMENT_MESSAGE);
         }
         Point newPoint = null;
         for(int i = 0; i < cachedPointsAmount; i++){
@@ -65,5 +44,27 @@ public class Point {
             cachedPointsAmount++;
         }
         return newPoint;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(this == o){
+            return true;
+        }
+        if(o == null || getClass() != o.getClass()){
+            return false;
+        }
+        Point other = (Point) o;
+        return x == other.x && y == other.y;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(x,y);
+    }
+
+    @Override
+    public String toString(){
+        return "Point { x = "+x+", y = "+y+"}";
     }
 }

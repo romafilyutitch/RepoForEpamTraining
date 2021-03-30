@@ -6,14 +6,14 @@ import by.epam.jwd.exception.IsNotFigureException;
 import by.epam.jwd.exception.IsNotSquareException;
 
 
-class SquareValidationStrategy implements ValidationStrategy {
-
+public class SquareValidationStrategy implements ValidationStrategy {
+    private static final String IS_NOT_SQUARE_MESSAGE = "Object %s is not square";
     @Override
     public void check(Figure figure) throws IsNotSquareException, IsNotFigureException {
-        checkPoints(figure.getPoints());
+        checkIfContainsSamePoints(figure);
         Point[] points = figure.getPoints();
         if(isSameX(points) || isSameX(points) || !isSquare(points)){
-            throw new IsNotSquareException();
+            throw new IsNotSquareException(String.format(IS_NOT_SQUARE_MESSAGE, figure));
         }
     }
 

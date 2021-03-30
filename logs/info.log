@@ -1,7 +1,7 @@
-2021-03-30 00:45:59.139 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 1}
-2021-03-30 00:45:59.172 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 5}
-2021-03-30 00:45:59.172 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 1}
-2021-03-30 00:45:59.173 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 2}
-2021-03-30 00:45:59.241 [main] INFO  by.epam.jwd.service.SimpleLogService - Line { name = second Line, startPoint = Point { x = 1, y = 1}, end Point = Point { x = 2, y = 1}}
-2021-03-30 00:45:59.288 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle { name = first Triangle, first vertext = Point { x = 1, y = 1}, second vertext = Point { x = 1, y = 5}, third vertex = Point { x = 2, y = 1}}
-2021-03-30 00:45:59.291 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle { name = second Triangle, first vertext = Point { x = 1, y = 1}, second vertext = Point { x = 2, y = 1}, third vertex = Point { x = 2, y = 2}}
+2021-03-30 20:30:44.669 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 1}
+2021-03-30 20:30:44.681 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 5}
+2021-03-30 20:30:44.682 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 1}
+2021-03-30 20:30:44.682 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 2}
+2021-03-30 20:30:44.745 [main] INFO  by.epam.jwd.service.SimpleLogService - Line{ points = [Point { x = 1, y = 1}, Point { x = 2, y = 1}]}
+2021-03-30 20:30:44.748 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle{ point = [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}]}
+2021-03-30 20:30:44.750 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle{ point = [Point { x = 1, y = 1}, Point { x = 2, y = 1}, Point { x = 2, y = 2}]}
