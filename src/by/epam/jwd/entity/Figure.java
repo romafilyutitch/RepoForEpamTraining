@@ -6,16 +6,16 @@ public abstract class Figure {
     private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "index out of bounds";
     private Point[] points;
 
-    public Figure(Point[] points){
+    public Figure(Point[] points) {
         this.points = points;
     }
 
-    public Point[] getPoints(){
+    public Point[] getPoints() {
         return points;
     }
 
-    public Point getPoint(int index){
-        if(index < 0 || index >= points.length){
+    public Point getPoint(int index) {
+        if (index < 0 || index >= points.length) {
             throw new IndexOutOfBoundsException(INDEX_OUT_OF_BOUNDS_MESSAGE);
         }
         return points[index];

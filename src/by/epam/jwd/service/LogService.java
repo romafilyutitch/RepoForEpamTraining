@@ -6,6 +6,8 @@ import by.epam.jwd.validation.ValidationStrategy;
 
 public interface LogService {
     void log(Point point);
+
     void log(Figure figure);
+
     void setValidationStrategy(ValidationStrategy newStrategy);
 }

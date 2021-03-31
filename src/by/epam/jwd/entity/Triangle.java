@@ -10,6 +10,6 @@ class Triangle extends Figure {
 
     @Override
     public String toString() {
-        return "Triangle{ point = "+ Arrays.toString(getPoints())+"}";
+        return "Triangle{ point = " + Arrays.toString(getPoints()) + "}";
     }
 }
