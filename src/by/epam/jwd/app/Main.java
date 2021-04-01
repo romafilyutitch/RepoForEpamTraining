@@ -1,4 +1,4 @@
-package by.epam.jwd;
+package by.epam.jwd.app;
 
 import by.epam.jwd.entity.*;
 import by.epam.jwd.service.LogService;
