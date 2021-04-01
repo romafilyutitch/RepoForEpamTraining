@@ -1,6 +1,12 @@
 package by.epam.jwd.app;
 
-import by.epam.jwd.entity.*;
+
+import by.epam.jwd.entity.Figure;
+import by.epam.jwd.entity.FigureFactory;
+import by.epam.jwd.entity.LineFactory;
+import by.epam.jwd.entity.Point;
+import by.epam.jwd.entity.SquareFactory;
+import by.epam.jwd.entity.TriangleFactory;
 import by.epam.jwd.service.LogService;
 import by.epam.jwd.service.SimpleLogService;
 import by.epam.jwd.validation.LineValidationStrategy;
