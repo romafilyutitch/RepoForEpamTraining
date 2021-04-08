@@ -1,6 +1,10 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
-public class SquareFactory implements FigureFactory {
+import by.epam.jwd.strategy.SquarePropertiesStrategy;
+
+public enum SquareFactory implements FigureFactory {
+    INSTANCE;
+
     private static final String WRONG_ARRAY_LENGTH_MESSAGE = "array length must be 4";
 
     @Override
@@ -8,6 +12,6 @@ public class SquareFactory implements FigureFactory {
         if (points.length != 4) {
             throw new IllegalArgumentException(WRONG_ARRAY_LENGTH_MESSAGE);
         }
-        return new Square(points);
+        return new Square(points, SquarePropertiesStrategy.getInstance());
     }
 }

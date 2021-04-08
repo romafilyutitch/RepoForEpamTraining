@@ -1,4 +1,4 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -8,22 +8,45 @@ public class Point {
     private static Point[] pointsCache = new Point[16];
     private static int cachedPointsAmount = 0;
     private final static String NEGATIVE_ARGUMENT_MESSAGE = "arguments must be positive";
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
+    /**
+     * Point constructor
+     *
+     * @param x value of horizontal axle
+     * @param y value of vertical axle
+     */
     private Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
+    /**
+     * get horizontal axle value
+     *
+     * @return x axle value
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * get vertical axle value
+     *
+     * @return y axle value
+     */
     public int getY() {
         return y;
     }
 
+    /**
+     * Creates instance of Point and save instance if Points cache
+     *
+     * @param x horizontal axle value
+     * @param y vertical axle value
+     * @return instance of Point
+     */
     public static Point newInstance(int x, int y) {
         if (x < 0 || y < 0) {
             throw new IllegalArgumentException(NEGATIVE_ARGUMENT_MESSAGE);

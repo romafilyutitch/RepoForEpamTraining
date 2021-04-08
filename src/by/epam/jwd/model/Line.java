@@ -1,11 +1,14 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
+
+import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.Arrays;
 
 class Line extends Figure {
-    public Line(Point[] points) {
-        super(points);
+
+    Line(Point[] points, FigurePropertiesStrategy strategy) {
+        super(points, strategy);
     }
 
     @Override

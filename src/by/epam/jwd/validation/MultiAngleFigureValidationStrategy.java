@@ -1,13 +1,14 @@
 package by.epam.jwd.validation;
 
-import by.epam.jwd.model.Figure;
-import by.epam.jwd.model.Point;
 import by.epam.jwd.exception.CanNotExistException;
 import by.epam.jwd.exception.IsNotFigureException;
+import by.epam.jwd.model.Figure;
+import by.epam.jwd.model.Point;
 
-public enum TriangleValidationStrategy implements ValidationStrategy {
+public enum MultiAngleFigureValidationStrategy implements ValidationStrategy {
     INSTANCE;
-    private static final String CAN_NOT_EXIST_MESSAGE = "Triangle %s can not exist";
+
+    private static final String CAN_NOT_EXIST_MESSAGE = "MultiAngleFigure %s can not exist";
 
     @Override
     public void check(Figure figure) throws CanNotExistException, IsNotFigureException {

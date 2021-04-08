@@ -1,2 +1,4 @@
-2021-03-30 20:30:44.744 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Line{ points = [Point { x = 1, y = 1}, Point { x = 1, y = 1}]} is not figure Line
-2021-03-30 20:30:44.754 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Square { points = [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}]} is not square
+2021-04-08 11:41:38.942 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Line{ points = [Point { x = 1, y = 1}, Point { x = 1, y = 1}]} is not figure Line
+2021-04-08 11:41:38.978 [main] ERROR by.epam.jwd.service.SimpleLogService - Object Square { points = [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}]} is not square
+2021-04-08 11:41:38.989 [main] ERROR by.epam.jwd.service.SimpleLogService - Object MultiAngleFigure { [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}, Point { x = 2, y = 1}]} is not figure MultiAngleFigure
+2021-04-08 11:41:38.990 [main] ERROR by.epam.jwd.service.SimpleLogService - Object MultiAngleFigure { [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 4, y = 1}]} is not figure MultiAngleFigure

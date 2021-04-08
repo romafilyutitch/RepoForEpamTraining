@@ -1,11 +1,13 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
+
+import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.Arrays;
 
 class Square extends Figure {
-    public Square(Point[] points) {
-        super(points);
+    Square(Point[] points, FigurePropertiesStrategy strategy) {
+        super(points, strategy);
     }
 
     @Override

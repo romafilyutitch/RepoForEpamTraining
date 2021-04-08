@@ -1,6 +1,10 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
-public class TriangleFactory implements FigureFactory {
+import by.epam.jwd.strategy.TrianglePropertiesStrategy;
+
+public enum TriangleFactory implements FigureFactory {
+    INSTANCE;
+
     private static final String WRONG_ARRAY_LENGTH_MESSAGE = "array length must be 3";
 
     @Override
@@ -8,6 +12,6 @@ public class TriangleFactory implements FigureFactory {
         if (points.length != 3) {
             throw new IllegalArgumentException(WRONG_ARRAY_LENGTH_MESSAGE);
         }
-        return new Triangle(points);
+        return new Triangle(points, TrianglePropertiesStrategy.INSTANCE);
     }
 }

@@ -1,11 +1,13 @@
-package by.epam.jwd.entity;
+package by.epam.jwd.model;
 
+
+import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.Arrays;
 
 class Triangle extends Figure {
-    public Triangle(Point[] points) {
-        super(points);
+    Triangle(Point[] points, FigurePropertiesStrategy strategy) {
+        super(points, strategy);
     }
 
     @Override

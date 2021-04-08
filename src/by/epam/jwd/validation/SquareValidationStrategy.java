@@ -1,12 +1,13 @@
 package by.epam.jwd.validation;
 
-import by.epam.jwd.entity.Figure;
-import by.epam.jwd.entity.Point;
+import by.epam.jwd.model.Figure;
+import by.epam.jwd.model.Point;
 import by.epam.jwd.exception.IsNotFigureException;
 import by.epam.jwd.exception.IsNotSquareException;
 
 
-public class SquareValidationStrategy implements ValidationStrategy {
+public enum SquareValidationStrategy implements ValidationStrategy {
+    INSTANCE;
     private static final String IS_NOT_SQUARE_MESSAGE = "Object %s is not square";
 
     @Override
@@ -18,6 +19,12 @@ public class SquareValidationStrategy implements ValidationStrategy {
         }
     }
 
+    /**
+     * Checks if passed figure is right square
+     *
+     * @param points points of passed figure
+     * @return {@code true} if figure is right square, {@code false} otherwise
+     */
     private boolean isSquare(Point[] points) {
         final int checkdistance = Math.abs(points[0].getX() - points[1].getX());
         for (int i = 0; i < points.length; i++) {
