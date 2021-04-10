@@ -35,29 +35,37 @@ public class MultiAngleFigurePropertiesStrategy implements FigurePropertiesStrat
     public double getSquare(Figure figure) {
         final List<Point> points = Arrays.asList(figure.getPoints());
         double sumMultipliesFirstXByYResult = getSumMultipliesXByY(points);
-        double sumMultipliesFirstYByYResult = getSumMultipliesYByX(points);
-        double substractionResult = Math.abs(sumMultipliesFirstXByYResult - sumMultipliesFirstYByYResult);
+        double sumMultipliesFirstYByXResult = getSumMultipliesYByX(points);
+        double substractionResult = Math.abs(sumMultipliesFirstXByYResult - sumMultipliesFirstYByXResult);
         return substractionResult / 2;
     }
 
     private double getSumMultipliesYByX(List<Point> points) {
-        final List<Double> multipyResults = new ArrayList<>();
+        final List<Double> multipleResults = new ArrayList<>();
         double result;
         for (int i = 0; i < points.size() - 1; i++) {
             result = points.get(i).getY() * points.get(i + 1).getX();
-            multipyResults.add(result);
+            multipleResults.add(result);
         }
-        return multipyResults.stream().reduce(0.0, Double::sum);
+        return sumMultipleResults(multipleResults);
     }
 
     private double getSumMultipliesXByY(List<Point> points) {
-        final List<Double> multipyResults = new ArrayList<>();
+        final List<Double> multipleResults = new ArrayList<>();
         double result;
         for (int i = 0; i < points.size() - 1; i++) {
             result = points.get(i).getX() * points.get(i + 1).getY();
-            multipyResults.add(result);
+            multipleResults.add(result);
         }
-        return multipyResults.stream().reduce(0.0, Double::sum);
+        return sumMultipleResults(multipleResults);
+    }
+
+    private double sumMultipleResults(List<Double> multipleResults) {
+        double sum = 0.0;
+        for(Double result : multipleResults) {
+            sum += result;
+        }
+        return sum;
     }
 
 }

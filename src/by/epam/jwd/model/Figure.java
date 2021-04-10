@@ -5,6 +5,8 @@ import by.epam.jwd.strategy.FigurePropertiesStrategy;
 import java.util.Arrays;
 
 public abstract class Figure {
+    private static long ID = 0;
+    private long id;
     private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "index out of bounds";
     private final Point[] points;
     private final FigurePropertiesStrategy figurePropertiesStrategy;
@@ -17,6 +19,7 @@ public abstract class Figure {
      */
     public Figure(Point[] points, FigurePropertiesStrategy propertyStrategy) {
         this.points = points;
+        this.id = ID++;
         this.figurePropertiesStrategy = propertyStrategy;
     }
 
@@ -41,6 +44,10 @@ public abstract class Figure {
             throw new IndexOutOfBoundsException(INDEX_OUT_OF_BOUNDS_MESSAGE);
         }
         return points[index];
+    }
+
+    public long getId() {
+        return id;
     }
 
     /**
