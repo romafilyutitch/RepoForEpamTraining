@@ -12,6 +12,9 @@ class Triangle extends Figure {
 
     @Override
     public String toString() {
-        return "Triangle{ point = " + Arrays.toString(getPoints()) + "}";
+        return "Triangle { id = " + getId() + ", points = "
+                + Arrays.toString(getPoints())
+                + ", Perimeter is " + getPerimeter()
+                + ", square is " + getSquare() + " }";
     }
 }

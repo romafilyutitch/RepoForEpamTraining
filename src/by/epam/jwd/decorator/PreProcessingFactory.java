@@ -5,23 +5,32 @@ import by.epam.jwd.factory.FigureFactory;
 import by.epam.jwd.factory.FigureType;
 import by.epam.jwd.model.Figure;
 import by.epam.jwd.model.Point;
+import by.epam.jwd.service.FigurePreProcessor;
+import by.epam.jwd.service.impl.FigurePreProcessorImpl;
+
+import java.util.Collection;
+import java.util.LinkedList;
 
 public class PreProcessingFactory extends FigureFigureDecorator {
+    private final Collection<FigurePreProcessor> preProcessors = new LinkedList<>();
 
     public PreProcessingFactory(FigureFactory factory) {
         super(factory);
+        addFigurePreProcessor(FigurePreProcessorImpl.INSTANCE);
+    }
+
+    public boolean addFigurePreProcessor(FigurePreProcessor preProcessor) {
+        return preProcessors.add(preProcessor);
+    }
+
+    public boolean removePreProcessor(FigurePreProcessor preProcessor) {
+        return preProcessors.remove(preProcessor);
     }
 
     @Override
     public Figure createFigure(FigureType type, Point... figureConstituents) throws FigureException {
-        if (type == FigureType.MULTI_ANGLE_FIGURE) {
-            if (figureConstituents.length < type.getAmountOfPoints() - 1 || figureConstituents.length > type.getAmountOfPoints() + 1) {
-                throw new IllegalArgumentException("figure constituents for figure " + type + " is not valid, must be >= " + (type.getAmountOfPoints() - 1) + " and <= " + (type.getAmountOfPoints() + 1));
-            }
-        } else {
-            if (type.getAmountOfPoints() != figureConstituents.length) {
-                throw new IllegalArgumentException("figure constituents amount for figure" + type + " is not valid, must be " + type.getAmountOfPoints());
-            }
+        for (FigurePreProcessor preProcessor : preProcessors) {
+            preProcessor.process(type, figureConstituents);
         }
         return super.createFigure(type, figureConstituents);
     }

@@ -12,6 +12,7 @@ public abstract class FigureFigureDecorator implements FigureFactory {
     public FigureFigureDecorator(FigureFactory factory) {
         this.factory = factory;
     }
+
     @Override
     public Figure createFigure(FigureType type, Point... figureConstituents) throws FigureException {
         return factory.createFigure(type, figureConstituents);

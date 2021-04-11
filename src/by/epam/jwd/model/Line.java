@@ -13,6 +13,9 @@ class Line extends Figure {
 
     @Override
     public String toString() {
-        return "Line{ points = " + Arrays.toString(getPoints()) + "}";
+        return "Line { id = " + getId() + ", points = "
+                + Arrays.toString(getPoints())
+                + ", Perimeter is " + getPerimeter()
+                + ", square is " + getSquare() + " }";
     }
 }

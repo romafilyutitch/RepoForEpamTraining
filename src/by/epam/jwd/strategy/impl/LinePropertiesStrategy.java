@@ -1,7 +1,8 @@
-package by.epam.jwd.strategy;
+package by.epam.jwd.strategy.impl;
 
 import by.epam.jwd.model.Figure;
 import by.epam.jwd.model.Point;
+import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 public class LinePropertiesStrategy implements FigurePropertiesStrategy {
     private static LinePropertiesStrategy instance;

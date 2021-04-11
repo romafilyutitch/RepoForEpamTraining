@@ -1,9 +1,16 @@
-2021-04-10 18:11:58.908 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 1}
-2021-04-10 18:11:58.926 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 1, y = 5}
-2021-04-10 18:11:58.927 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 1}
-2021-04-10 18:11:58.927 [main] INFO  by.epam.jwd.service.SimpleLogService - Point { x = 2, y = 2}
-2021-04-10 18:11:58.999 [main] INFO  by.epam.jwd.service.SimpleLogService - Line{ points = [Point { x = 1, y = 1}, Point { x = 2, y = 1}]} perimeter is 1.0, square is 0.0
-2021-04-10 18:11:59.003 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle{ point = [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}]} perimeter is 9.123105625617661, square is 2.0000000000000018
-2021-04-10 18:11:59.003 [main] INFO  by.epam.jwd.service.SimpleLogService - Triangle{ point = [Point { x = 1, y = 1}, Point { x = 2, y = 1}, Point { x = 2, y = 2}]} perimeter is 3.414213562373095, square is 0.49999999999999983
-2021-04-10 18:11:59.013 [main] INFO  by.epam.jwd.service.SimpleLogService - MultiAngleFigure { [Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 1}, Point { x = 2, y = 2}, Point { x = 4, y = 4}]} perimeter is 16.0, square is 16.0
-2021-04-10 18:11:59.014 [main] INFO  by.epam.jwd.service.SimpleLogService - MultiAngleFigure { [Point { x = 2, y = 1}, Point { x = 1, y = 1}, Point { x = 1, y = 5}, Point { x = 2, y = 2}, Point { x = 3, y = 4}, Point { x = 4, y = 4}]} perimeter is 4.0, square is 1.0
+2021-04-11 14:34:30.828 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 1}
+2021-04-11 14:34:30.870 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 5}
+2021-04-11 14:34:30.871 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 1}
+2021-04-11 14:34:30.871 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 2}
+2021-04-11 14:34:31.079 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 0, points = [Point { x = 0, y = 1}, Point { x = 0, y = 2}], Perimeter is 1.0, square is 0.0 }
+2021-04-11 14:34:31.080 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 1, points = [Point { x = 2, y = 2}, Point { x = 3, y = 4}], Perimeter is 2.23606797749979, square is 0.0 }
+2021-04-11 14:34:31.093 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
+2021-04-11 14:34:31.094 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
+2021-04-11 14:34:31.342 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - MultiAngleFigure { id = 6, points = [Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 1, y = 5}, Point { x = 1, y = 1}, Point { x = 10, y = 10}, Point { x = 20, y = 20}], Perimeter is 61.449007433422175, square is 1.5 }
+2021-04-11 14:34:31.342 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Results of operations with crudService
+2021-04-11 14:34:31.347 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Figures that match multiple criteria: 
+2021-04-11 14:34:31.349 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
+2021-04-11 14:34:31.350 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Figures that have first point's x axle equal 1:
+2021-04-11 14:34:31.352 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
+2021-04-11 14:34:31.352 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Result of finding figure with id equal 5:
+2021-04-11 14:34:31.365 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - There is no such figure in storage

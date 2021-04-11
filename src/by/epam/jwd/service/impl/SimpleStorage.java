@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.stream.Stream;
 
 public class SimpleStorage implements Storage {
-    private Collection<Figure> figures = new ArrayList<>();
+    private final Collection<Figure> figures = new ArrayList<>();
 
     @Override
     public boolean save(Figure figure) {

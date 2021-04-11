@@ -11,6 +11,9 @@ class MultiAngleFigure extends Figure {
 
     @Override
     public String toString() {
-        return "MultiAngleFigure { " + Arrays.toString(getPoints()) + "}";
+        return "MultiAngleFigure { id = " + getId() + ", points = "
+                + Arrays.toString(getPoints())
+                + ", Perimeter is " + getPerimeter()
+                + ", square is " + getSquare() + " }";
     }
 }

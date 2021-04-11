@@ -6,10 +6,12 @@ import by.epam.jwd.model.SimpleFigureFactory;
 
 public enum ApplicationContext {
     INSTANCE;
+
+    /**
+     * Wraps figure factory in decorators
+     * @return wrapped figure factory
+     */
     public FigureFactory getFigureFactory() {
-        FigureFactory simpleFactory = SimpleFigureFactory.INSTANCE;
-        simpleFactory = new PreProcessingFactory(simpleFactory);
-        simpleFactory = new PostProcessingFactory(simpleFactory);
-        return simpleFactory;
+        return new PostProcessingFactory(new PreProcessingFactory(SimpleFigureFactory.INSTANCE));
     }
 }

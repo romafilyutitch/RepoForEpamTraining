@@ -8,6 +8,10 @@ public enum FigureType {
         this.amountOfPoints = amountOfPoints;
     }
 
+    /**
+     * Returns amount of figure points
+     * @return
+     */
     public int getAmountOfPoints() {
         return amountOfPoints;
     }

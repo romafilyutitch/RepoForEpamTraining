@@ -1,7 +1,8 @@
-package by.epam.jwd.strategy;
+package by.epam.jwd.strategy.impl;
 
 import by.epam.jwd.model.Figure;
 import by.epam.jwd.model.Point;
+import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -62,10 +63,9 @@ public class MultiAngleFigurePropertiesStrategy implements FigurePropertiesStrat
 
     private double sumMultipleResults(List<Double> multipleResults) {
         double sum = 0.0;
-        for(Double result : multipleResults) {
+        for (Double result : multipleResults) {
             sum += result;
         }
         return sum;
     }
-
 }

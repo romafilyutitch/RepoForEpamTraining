@@ -3,20 +3,15 @@ package by.epam.jwd.model;
 import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public abstract class Figure {
     private static long ID = 0;
-    private long id;
+    private final long id;
     private static final String INDEX_OUT_OF_BOUNDS_MESSAGE = "index out of bounds";
     private final Point[] points;
     private final FigurePropertiesStrategy figurePropertiesStrategy;
 
-    /**
-     * Figure constructor
-     *
-     * @param points           points array to pass
-     * @param propertyStrategy set figure properties
-     */
     public Figure(Point[] points, FigurePropertiesStrategy propertyStrategy) {
         this.points = points;
         this.id = ID++;
@@ -46,6 +41,10 @@ public abstract class Figure {
         return points[index];
     }
 
+    /**
+     * Returns figure id
+     * @return figure id
+     */
     public long getId() {
         return id;
     }
@@ -73,11 +72,13 @@ public abstract class Figure {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Figure figure = (Figure) o;
-        return Arrays.equals(points, figure.points);
+        return id == figure.id && Arrays.equals(points, figure.points) && Objects.equals(figurePropertiesStrategy, figure.figurePropertiesStrategy);
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(points);
+        int result = Objects.hash(id, figurePropertiesStrategy);
+        result = 31 * result + Arrays.hashCode(points);
+        return result;
     }
 }
