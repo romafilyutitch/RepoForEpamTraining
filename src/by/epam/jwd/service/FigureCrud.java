@@ -3,6 +3,7 @@ package by.epam.jwd.service;
 import by.epam.jwd.factory.FigureType;
 import by.epam.jwd.model.Figure;
 import by.epam.jwd.model.Point;
+import by.epam.jwd.service.impl.Criteria;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -11,20 +12,24 @@ import java.util.function.Predicate;
 
 public interface FigureCrud {
     /**
-     * creates and save new figure in storage
+     * Creates and save new figure in storage
      * @param type type of new figure
-     * @param figureConstituents  array of points for new figure
-     * @return {@code true} if figure was created, {@code false} otherwise
+     * @param figureConstituents array of points for new figure
+     * @param <T> type of figure type enumeration
+     * @param <R> type of new figure instance
+     * @return new figure
      */
-    boolean create(FigureType type, Point... figureConstituents);
+    <T extends FigureType, R extends Figure> R create(T type, Point... figureConstituents);
 
     /**
-     * Creates and save multiple figures in storage
-     * @param type type of new figures
-     * @param figureConstituents collection of arrays for each new figure
-     * @return {@code true} if any figure was created, {@code false} otherwise
+     * Creates and saves multiple new figures in storage
+     * @param type type of new figure
+     * @param figureConstituents array of points for new figure
+     * @param <T> type from FigureType enumeration
+     * @param <R> type of returned fogure
+     * @return Collection of new figures
      */
-    boolean multiCreate(FigureType type, Collection<Point[]> figureConstituents);
+    <T extends FigureType, R extends Figure> Collection<R> multiCreate(T type, Collection<Point[]> figureConstituents);
 
     /**
      * Deletes figures from storage
@@ -74,12 +79,5 @@ public interface FigureCrud {
      * Builds result based on chain of criteria
      * @return Collection of figures that match all conditions
      */
-    Collection<Figure> buildResultByCriteria();
-
-    /**
-     * add another condition to condition chain to build find result
-     * @param criterion another criterion predicate
-     * @return {@code FigureCrud} object to continue chain
-     */
-    FigureCrud addFindCriterion(Predicate<Figure> criterion);
+    Collection<Figure> findByCriteria(Criteria criteria);
 }

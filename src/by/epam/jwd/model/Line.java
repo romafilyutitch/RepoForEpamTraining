@@ -5,7 +5,7 @@ import by.epam.jwd.strategy.FigurePropertiesStrategy;
 
 import java.util.Arrays;
 
-class Line extends Figure {
+public class Line extends Figure {
 
     Line(Point[] points, FigurePropertiesStrategy strategy) {
         super(points, strategy);

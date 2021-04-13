@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Stream;
 
-public class SimpleStorage implements Storage {
+public class FigureStorage implements Storage<Figure> {
     private final Collection<Figure> figures = new ArrayList<>();
 
     @Override

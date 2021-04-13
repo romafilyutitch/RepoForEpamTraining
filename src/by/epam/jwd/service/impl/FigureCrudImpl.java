@@ -10,9 +10,9 @@ import by.epam.jwd.service.FigureCrud;
 import by.epam.jwd.service.LogService;
 import by.epam.jwd.service.Storage;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -22,33 +22,32 @@ import java.util.stream.Stream;
 public enum FigureCrudImpl implements FigureCrud {
     INSTANCE;
     private final LogService logService = SimpleLogService.INSTANCE;
-    private final Storage storage = new SimpleStorage();
+    private final Storage<Figure> storage = new FigureStorage();
     private final FigureFactory factory = ApplicationContext.INSTANCE.getFigureFactory();
-    private final Collection<Predicate<Figure>> criteriaPredicates = new LinkedList<>();
 
     @Override
-    public boolean create(FigureType type, Point... figureConstituents) {
-        boolean created = false;
+    public <T extends FigureType, R extends Figure> R create(T type, Point... figureConstituents) {
+        R newInstance = null;
         try {
-            Figure newInstance = factory.createFigure(type, figureConstituents);
+            newInstance = (R) factory.createFigure(type, figureConstituents);
             logService.info(newInstance);
             storage.save(newInstance);
-            created = true;
         } catch (FigureException e) {
             logService.error(e.getMessage());
         }
-        return created;
+        return newInstance;
     }
 
     @Override
-    public boolean multiCreate(FigureType type, Collection<Point[]> figuresConstituents) {
-        boolean created = false;
+    public <T extends FigureType, R extends Figure> Collection<R> multiCreate(T type, Collection<Point[]> figuresConstituents) {
+        Collection<R> figures = new ArrayList<>();
         for (Point[] figureConstituent : figuresConstituents) {
-            if (create(type, figureConstituent)) {
-                created = true;
+            R newFigure = create(type, figureConstituent);
+            if (newFigure != null) {
+                figures.add(newFigure);
             }
         }
-        return created;
+        return figures;
     }
 
     @Override
@@ -87,17 +86,12 @@ public enum FigureCrudImpl implements FigureCrud {
     }
 
     @Override
-    public List<Figure> buildResultByCriteria() {
-        Stream<Figure> figureStream = storage.getStream();
-        for (Predicate<Figure> predicate : criteriaPredicates) {
-            figureStream = figureStream.filter(predicate);
+    public Collection<Figure> findByCriteria(Criteria criteria) {
+        Collection<Predicate<Figure>> predicates = criteria.getCriteriaPredicates();
+        Stream<Figure> stream = storage.getStream();
+        for (Predicate<Figure> predicate : predicates) {
+            stream = stream.filter(predicate);
         }
-        return figureStream.collect(Collectors.toList());
-    }
-
-    @Override
-    public FigureCrudImpl addFindCriterion(Predicate<Figure> criterion) {
-        criteriaPredicates.add(criterion);
-        return this;
+        return stream.collect(Collectors.toList());
     }
 }

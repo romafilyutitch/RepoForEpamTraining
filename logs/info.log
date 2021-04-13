@@ -1,16 +1,21 @@
-2021-04-11 14:34:30.828 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 1}
-2021-04-11 14:34:30.870 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 5}
-2021-04-11 14:34:30.871 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 1}
-2021-04-11 14:34:30.871 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 2}
-2021-04-11 14:34:31.079 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 0, points = [Point { x = 0, y = 1}, Point { x = 0, y = 2}], Perimeter is 1.0, square is 0.0 }
-2021-04-11 14:34:31.080 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 1, points = [Point { x = 2, y = 2}, Point { x = 3, y = 4}], Perimeter is 2.23606797749979, square is 0.0 }
-2021-04-11 14:34:31.093 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
-2021-04-11 14:34:31.094 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
-2021-04-11 14:34:31.342 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - MultiAngleFigure { id = 6, points = [Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 1, y = 5}, Point { x = 1, y = 1}, Point { x = 10, y = 10}, Point { x = 20, y = 20}], Perimeter is 61.449007433422175, square is 1.5 }
-2021-04-11 14:34:31.342 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Results of operations with crudService
-2021-04-11 14:34:31.347 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Figures that match multiple criteria: 
-2021-04-11 14:34:31.349 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
-2021-04-11 14:34:31.350 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Figures that have first point's x axle equal 1:
-2021-04-11 14:34:31.352 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
-2021-04-11 14:34:31.352 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Result of finding figure with id equal 5:
-2021-04-11 14:34:31.365 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - There is no such figure in storage
+2021-04-13 13:54:26.540 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 1}
+2021-04-13 13:54:26.564 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 1, y = 5}
+2021-04-13 13:54:26.564 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 1}
+2021-04-13 13:54:26.564 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Point { x = 2, y = 2}
+2021-04-13 13:54:26.621 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 0, points = [Point { x = 0, y = 1}, Point { x = 0, y = 2}], Perimeter is 1.0, square is 0.0 }
+2021-04-13 13:54:26.622 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 1, points = [Point { x = 2, y = 2}, Point { x = 3, y = 4}], Perimeter is 2.23606797749979, square is 0.0 }
+2021-04-13 13:54:26.627 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
+2021-04-13 13:54:26.629 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
+2021-04-13 13:54:26.667 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - MultiAngleFigure { id = 6, points = [Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 1, y = 5}, Point { x = 1, y = 1}, Point { x = 10, y = 10}, Point { x = 20, y = 20}], Perimeter is 61.449007433422175, square is 1.5 }
+2021-04-13 13:54:26.668 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Search on multiple criteria ( id > 1 && square > 0)
+2021-04-13 13:54:26.677 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 }
+2021-04-13 13:54:26.677 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 }
+2021-04-13 13:54:26.678 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - MultiAngleFigure { id = 6, points = [Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 1, y = 5}, Point { x = 1, y = 1}, Point { x = 10, y = 10}, Point { x = 20, y = 20}], Perimeter is 61.449007433422175, square is 1.5 }
+2021-04-13 13:54:26.679 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Figure with id equals 0
+2021-04-13 13:54:26.682 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 0, points = [Point { x = 0, y = 1}, Point { x = 0, y = 2}], Perimeter is 1.0, square is 0.0 }
+2021-04-13 13:54:26.682 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Update all figures in storage
+2021-04-13 13:54:26.685 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 0, points = [Point { x = 0, y = 1}, Point { x = 0, y = 2}], Perimeter is 1.0, square is 0.0 } UPDATED
+2021-04-13 13:54:26.685 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Line { id = 1, points = [Point { x = 2, y = 2}, Point { x = 3, y = 4}], Perimeter is 2.23606797749979, square is 0.0 } UPDATED
+2021-04-13 13:54:26.686 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 2, points = [Point { x = 1, y = 1}, Point { x = 2, y = 3}, Point { x = 4, y = 5}], Perimeter is 10.06449510224598, square is 0.9999999999999988 } UPDATED
+2021-04-13 13:54:26.688 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - Triangle { id = 3, points = [Point { x = 4, y = 1}, Point { x = 5, y = 5}, Point { x = 10, y = 1}], Perimeter is 16.52622986305051, square is 12.000000000000004 } UPDATED
+2021-04-13 13:54:26.697 [main] INFO  by.epam.jwd.service.impl.SimpleLogService - MultiAngleFigure { id = 6, points = [Point { x = 2, y = 2}, Point { x = 2, y = 1}, Point { x = 1, y = 5}, Point { x = 1, y = 1}, Point { x = 10, y = 10}, Point { x = 20, y = 20}], Perimeter is 61.449007433422175, square is 1.5 } UPDATED
