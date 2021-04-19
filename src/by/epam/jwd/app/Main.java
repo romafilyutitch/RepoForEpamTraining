@@ -34,14 +34,19 @@ public class Main {
             logService.info(pointsIterator.next());
         } while (pointsIterator.hasNext());
 
-        Collection<Line> figures = crudService.multiCreate(FigureType.LINE,
+        Collection<Line> lines = crudService.multiCreate(FigureType.LINE,
                 List.of(new Point[]{Point.newInstance(0, 1), Point.newInstance(0, 2)},
                         new Point[]{Point.newInstance(2, 2), Point.newInstance(3, 4)}));
+
         Collection<Triangle> triangles = crudService.multiCreate(FigureType.TRIANGLE,
                 List.of(new Point[]{Point.newInstance(1, 1), Point.newInstance(2, 3), Point.newInstance(4, 5)},
                         new Point[]{Point.newInstance(4, 1), Point.newInstance(5, 5), Point.newInstance(10, 1)}));
-        Square square = crudService.create(FigureType.SQUARE,
+
+        Optional<Square> square = crudService.create(FigureType.SQUARE,
                 new Point[]{Point.newInstance(0, 1), Point.newInstance(0, 2), Point.newInstance(4,1), Point.newInstance(5,5)});
+        Collection<Square> squares = new ArrayList<>();
+        square.ifPresent(squares::add);
+
         Collection<MultiAngleFigure> multiFigures =  crudService.multiCreate(FigureType.MULTI_ANGLE_FIGURE,
                 List.of(new Point[]{points.get(1), points.get(2), points.get(3), Point.newInstance(2, 2)},
                 new Point[]{points.get(3), points.get(2), points.get(1), points.get(0), Point.newInstance(10, 10), Point.newInstance(20, 20)}));
