@@ -42,10 +42,9 @@ public class Main {
                         new Point[]{Point.newInstance(4, 1), Point.newInstance(5, 5), Point.newInstance(10, 1)}));
         Square square = crudService.create(FigureType.SQUARE,
                 new Point[]{Point.newInstance(0, 1), Point.newInstance(0, 2), Point.newInstance(4,1), Point.newInstance(5,5)});
-        crudService.create(FigureType.MULTI_ANGLE_FIGURE,
-                points.get(0), points.get(1), points.get(2), points.get(3), Point.newInstance(2, 2));
-        crudService.create(FigureType.MULTI_ANGLE_FIGURE,
-                points.get(3), points.get(2), points.get(1), points.get(0), Point.newInstance(10, 10), Point.newInstance(20, 20));
+        Collection<MultiAngleFigure> multiFigures =  crudService.multiCreate(FigureType.MULTI_ANGLE_FIGURE,
+                List.of(new Point[]{points.get(1), points.get(2), points.get(3), Point.newInstance(2, 2)},
+                new Point[]{points.get(3), points.get(2), points.get(1), points.get(0), Point.newInstance(10, 10), Point.newInstance(20, 20)}));
 
         logService.printMessage("Search on multiple criteria ( id > 1 && square > 0)");
         Criteria findCriteria = new Criteria.Builder()

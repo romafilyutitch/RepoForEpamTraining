@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.function.Predicate;
 
 public class Criteria {
-    private Collection<Predicate<Figure>> predicates = new ArrayList<>();
+    private final Collection<Predicate<Figure>> predicates = new ArrayList<>();
 
     private void addPredicate(Predicate<Figure> newPredicate) {
         predicates.add(newPredicate);
@@ -18,7 +18,7 @@ public class Criteria {
     }
 
     public static class Builder {
-        private Criteria criteria;
+        private final Criteria criteria;
 
         public Builder() {
             criteria = new Criteria();
@@ -67,6 +67,21 @@ public class Criteria {
 
         public Builder wherePerimeterLessThan(double perimeter) {
             criteria.addPredicate(figure -> figure.getPerimeter() < perimeter);
+            return this;
+        }
+
+        public Builder whereFigureTypeStartsWith(String start) {
+            criteria.addPredicate(figure -> figure.getClass().getSimpleName().startsWith(start));
+            return this;
+        }
+
+        public Builder whereFigureTypeEndsWith(String end) {
+            criteria.addPredicate(figure -> figure.getClass().getSimpleName().endsWith(end));
+            return this;
+        }
+
+        public Builder whereFigureTypeLike(String regex) {
+            criteria.addPredicate(figure -> figure.getClass().getSimpleName().matches(regex));
             return this;
         }
 

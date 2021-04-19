@@ -12,7 +12,6 @@ import by.epam.jwd.service.Storage;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -26,26 +25,24 @@ public enum FigureCrudImpl implements FigureCrud {
     private final FigureFactory factory = ApplicationContext.INSTANCE.getFigureFactory();
 
     @Override
-    public <T extends FigureType, R extends Figure> R create(T type, Point... figureConstituents) {
-        R newInstance = null;
+    public <T extends FigureType, R extends Figure> Optional<R> create(T type, Point... figureConstituents) {
         try {
-            newInstance = (R) factory.createFigure(type, figureConstituents);
+            R newInstance = (R) factory.createFigure(type, figureConstituents);
             logService.info(newInstance);
             storage.save(newInstance);
+            return Optional.of(newInstance);
         } catch (FigureException e) {
             logService.error(e.getMessage());
         }
-        return newInstance;
+        return Optional.empty();
     }
 
     @Override
     public <T extends FigureType, R extends Figure> Collection<R> multiCreate(T type, Collection<Point[]> figuresConstituents) {
         Collection<R> figures = new ArrayList<>();
         for (Point[] figureConstituent : figuresConstituents) {
-            R newFigure = create(type, figureConstituent);
-            if (newFigure != null) {
-                figures.add(newFigure);
-            }
+            Optional<R> newFigure = create(type, figureConstituent);
+            newFigure.ifPresent(figures::add);
         }
         return figures;
     }

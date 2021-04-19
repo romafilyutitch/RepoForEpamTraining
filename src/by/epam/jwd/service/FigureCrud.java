@@ -19,7 +19,7 @@ public interface FigureCrud {
      * @param <R> type of new figure instance
      * @return new figure
      */
-    <T extends FigureType, R extends Figure> R create(T type, Point... figureConstituents);
+    <T extends FigureType, R extends Figure> Optional<R> create(T type, Point... figureConstituents);
 
     /**
      * Creates and saves multiple new figures in storage
