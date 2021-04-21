@@ -6,18 +6,21 @@ import by.epam.jwd.model.Figure;
 import by.epam.jwd.model.Point;
 import by.epam.jwd.service.FigurePostProcessor;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public enum FigureExistencePostProcessor implements FigurePostProcessor {
     INSTANCE;
     @Override
     public Figure process(Figure figure) throws FigureException {
-        Point[] points = figure.getPoints();
         if (checkIfContainsSamePoints(figure)) {
             throw new FigureNotExistException("Object " + figure + " is not figure " + figure.getClass().getSimpleName());
         }
-        if (hasSameX(points) || hasSameY(points)) {
+        if (hasSameX(figure) || hasSameY(figure)) {
             throw new FigureException("Object " + figure + " can not be " + figure.getClass().getSimpleName());
         }
-        if (isFourAngleFigure(figure) && !isSquare(points)) {
+        if (isFourAngleFigure(figure) && !isSquare(figure)) {
                 throw new FigureException("Object " + figure + " can not be Square");
         }
         return figure;
@@ -35,9 +38,10 @@ public enum FigureExistencePostProcessor implements FigurePostProcessor {
         return false;
     }
 
-    private boolean hasSameX(Point[] points) {
+    private boolean hasSameX(Figure figure) {
+        Point[] points = figure.getPoints();
         final int xCoord = points[0].getX();
-        int amountOfPointsOnSameX = 0;
+        int amountOfPointsOnSameX = 1;
         for (int i = 1; i < points.length; i++) {
             if (points[i].getX() == xCoord) {
                 amountOfPointsOnSameX++;
@@ -46,9 +50,10 @@ public enum FigureExistencePostProcessor implements FigurePostProcessor {
         return amountOfPointsOnSameX == points.length;
     }
 
-    private boolean hasSameY(Point[] points) {
+    private boolean hasSameY(Figure figure) {
+        Point[] points = figure.getPoints();
         final int yCoord = points[0].getY();
-        int amountOfPointsOnSameY = 0;
+        int amountOfPointsOnSameY = 1;
         for (int i = 1; i < points.length; i++) {
             if (points[i].getY() == yCoord) {
                 amountOfPointsOnSameY++;
@@ -57,17 +62,26 @@ public enum FigureExistencePostProcessor implements FigurePostProcessor {
         return amountOfPointsOnSameY == points.length;
     }
 
-    private boolean isSquare(Point[] points) {
-        final int checkdistance = Math.abs(points[0].getX() - points[1].getX());
+    private boolean isSquare(Figure figure) {
+        List<Double> lengths = new ArrayList<>();
+        Point[] points = figure.getPoints();
         for (int i = 0; i < points.length; i++) {
             for (int j = i + 1; j < points.length; j++) {
-                int xDistance = Math.abs(points[i].getX() - points[j].getX());
-                int yDistance = Math.abs(points[i].getY() - points[j].getY());
-                if (xDistance != 0 && xDistance != checkdistance && yDistance != 0 && yDistance != checkdistance)
-                    return false;
+                lengths.add(getLength(points[i], points[j]));
             }
         }
-        return true;
+        Collections.sort(lengths);
+        return lengths.get(0).equals(lengths.get(3)) && lengths.get(4).equals(lengths.get(5));
+    }
+
+    private double getLength(Point onePoint, Point otherPoint) {
+        double length = Math.sqrt(Math.pow(onePoint.getX() - otherPoint.getX(), 2) + Math.pow(onePoint.getY() - otherPoint.getY(), 2));
+        if (length >= 0) {
+            return length;
+        }
+        return Math.abs(length);
+
+
     }
 
     private boolean isFourAngleFigure(Figure figure) {

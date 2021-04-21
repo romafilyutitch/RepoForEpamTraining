@@ -13,6 +13,12 @@ public abstract class Figure {
     private final FigurePropertiesStrategy figurePropertiesStrategy;
 
     public Figure(Point[] points, FigurePropertiesStrategy propertyStrategy) {
+        if (points == null) {
+            throw new IllegalArgumentException("points arrays must not be null");
+        }
+        if (points.length == 0) {
+            throw new IllegalArgumentException("points array length must be bigger than 0");
+        }
         this.points = points;
         this.id = ID++;
         this.figurePropertiesStrategy = propertyStrategy;
@@ -72,12 +78,12 @@ public abstract class Figure {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Figure figure = (Figure) o;
-        return id == figure.id && Arrays.equals(points, figure.points) && Objects.equals(figurePropertiesStrategy, figure.figurePropertiesStrategy);
+        return Arrays.equals(points, figure.points) && Objects.equals(figurePropertiesStrategy, figure.figurePropertiesStrategy);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(id, figurePropertiesStrategy);
+        int result = Objects.hash(figurePropertiesStrategy);
         result = 31 * result + Arrays.hashCode(points);
         return result;
     }
