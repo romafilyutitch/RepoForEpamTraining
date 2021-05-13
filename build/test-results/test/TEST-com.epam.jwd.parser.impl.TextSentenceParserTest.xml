@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.jwd.parser.impl.TextSentenceParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-13T15:12:16" hostname="DESKTOP-NUHM85O" time="0.013">
+  <properties/>
+  <testcase name="parse()" classname="com.epam.jwd.parser.impl.TextSentenceParserTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

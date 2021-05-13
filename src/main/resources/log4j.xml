@@ -1,0 +1,57 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="appAppender" class="org.apache.log4j.FileAppender">
+        <param name="file" value="logs/appLog.log"/>
+        <param name="append" value="false"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="interpreterAppender" class="org.apache.log4j.FileAppender">
+        <param name="file" value="logs/interpreterLog.log"/>
+        <param name="append" value="false"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="parserAppender" class="org.apache.log4j.FileAppender">
+        <param name="file" value="logs/parserLog.log"/>
+        <param name="append" value="false"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="sortAppender" class="org.apache.log4j.FileAppender">
+        <param name="file" value="logs/sortLog.log"/>
+        <param name="append" value="false"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
+        </layout>
+    </appender>
+
+    <category name="com.epam.jwd.app">
+        <priority value="all"/>
+        <appender-ref ref="appAppender"/>
+    </category>
+
+    <category name="com.epam.jwd.interpreter">
+        <priority value="all"/>
+        <appender-ref ref="interpreterAppender"/>
+    </category>
+
+    <category name="com.epam.jwd.parser">
+        <priority value="all"/>
+        <appender-ref ref="parserAppender"/>
+    </category>
+
+    <category name="com.epam.jwd.sort">
+        <priority value="all"/>
+        <appender-ref ref="sortAppender"/>
+    </category>
+
+</log4j:configuration>
