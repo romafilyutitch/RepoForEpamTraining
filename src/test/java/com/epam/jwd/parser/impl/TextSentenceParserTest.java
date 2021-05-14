@@ -1,6 +1,6 @@
 package com.epam.jwd.parser.impl;
 
-import com.epam.jwd.composer.Lexeme;
+import com.epam.jwd.model.Lexeme;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

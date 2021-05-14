@@ -1,6 +1,6 @@
 package com.epam.jwd.sort;
 
-import com.epam.jwd.composer.Lexeme;
+import com.epam.jwd.model.Lexeme;
 import com.epam.jwd.parser.Parser;
 import com.epam.jwd.parser.TextParserFactory;
 import org.slf4j.Logger;

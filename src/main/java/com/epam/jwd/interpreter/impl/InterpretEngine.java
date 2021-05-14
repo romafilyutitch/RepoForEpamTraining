@@ -3,9 +3,6 @@ package com.epam.jwd.interpreter.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class InterpretEngine {
     private static final Logger logger = LoggerFactory.getLogger(InterpretEngine.class);
 
@@ -25,65 +22,35 @@ public class InterpretEngine {
     }
 
     private String findExpressionInBracesOnMaxDepth(String text) {
-        long amountOfLeftBracesInText = text.chars().filter(c -> c == '(').count();
-        int LeftBracesInTextCounter = 0;
-        int i;
-        for (i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == '(') {
-                LeftBracesInTextCounter++;
-            }
-            if (amountOfLeftBracesInText == LeftBracesInTextCounter) {
-                break;
-            }
-        }
-        int j;
-        for (j = 0; j < text.length(); j++) {
-            if (text.charAt(j) == ')' && j > i) {
-                break;
-            }
-        }
-        final String substring = text.substring(i, j + 1);
+        int substringStartIndex = getLastLeftBraceIndex(text);
+        int substringEndIndex = getRightRightBraceIndex(text, substringStartIndex);
+        final String substring = text.substring(substringStartIndex, substringEndIndex + 1);
         logger.info("Expression in braces was found : " + substring);
         return substring;
     }
 
-    private String orderExpressionStringInOperationPriority(String expressionString) {
-        Matcher matcher = Pattern.compile("~\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
+    private int getRightRightBraceIndex(String text, int lastLeftBraceIndex) {
+        int i;
+        for (i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == ')' && i > lastLeftBraceIndex) {
+                return i;
+            }
         }
-        matcher = Pattern.compile("\\d+>>\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
+        return i;
+    }
+
+    private int getLastLeftBraceIndex(String text) {
+        long amountOfLeftBracesInText = text.chars().filter(c -> c == '(').count();
+        int leftBracesInTextCounter = 0;
+        int i;
+        for (i = 0; i < text.length(); i++) {
+            if (text.charAt(i ) == '(') {
+                leftBracesInTextCounter++;
+            }
+            if (amountOfLeftBracesInText == leftBracesInTextCounter) {
+                return i;
+            }
         }
-        matcher = Pattern.compile("\\d+<<\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
-        }
-        matcher = Pattern.compile("\\d+&\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
-        }
-        matcher = Pattern.compile("\\d+^\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
-        }
-        matcher = Pattern.compile("\\d+\\|\\d+").matcher(expressionString);
-        if (matcher.find()) {
-            final String group = matcher.group();
-            expressionString = expressionString.replace(group, "(" + group + ")");
-            return expressionString;
-        }
-        return expressionString;
+        return i;
     }
 }

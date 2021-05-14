@@ -1,6 +1,6 @@
 package com.epam.jwd.parser;
 
-import com.epam.jwd.composer.Lexeme;
+import com.epam.jwd.model.Lexeme;
 
 public interface Parser {
     Lexeme parse(String text);

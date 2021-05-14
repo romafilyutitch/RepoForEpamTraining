@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.jwd.model.impl.TextSentenceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-14T18:32:15" hostname="DESKTOP-NUHM85O" time="0.024">
+  <properties/>
+  <testcase name="addLexeme()" classname="com.epam.jwd.model.impl.TextSentenceTest" time="0.005"/>
+  <testcase name="getAsList()" classname="com.epam.jwd.model.impl.TextSentenceTest" time="0.006"/>
+  <testcase name="getAsString()" classname="com.epam.jwd.model.impl.TextSentenceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

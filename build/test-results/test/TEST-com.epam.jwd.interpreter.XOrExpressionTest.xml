@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.epam.jwd.interpreter.XOrExpressionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-13T15:12:16" hostname="DESKTOP-NUHM85O" time="0.008">
+<testsuite name="com.epam.jwd.interpreter.XOrExpressionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-14T18:32:15" hostname="DESKTOP-NUHM85O" time="0.051">
   <properties/>
-  <testcase name="interpret()" classname="com.epam.jwd.interpreter.XOrExpressionTest" time="0.008"/>
+  <testcase name="interpret()" classname="com.epam.jwd.interpreter.XOrExpressionTest" time="0.051"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

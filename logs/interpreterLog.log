@@ -1,537 +1,537 @@
-2021-05-13 18:12:11 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 13 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:11 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
-2021-05-13 18:12:11 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:11 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:11 INFO  InterpretEngine - Expression in braces was found : (3&4)
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:11 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:11 INFO  SwapExpression - Swap interpretation was made, result: -7
-2021-05-13 18:12:11 INFO  NumberExpression - 9 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 9
-2021-05-13 18:12:11 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 9
-2021-05-13 18:12:11 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:11 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:11 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 6
-2021-05-13 18:12:11 INFO  NumberExpression - 47 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 6
-2021-05-13 18:12:11 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 4
-2021-05-13 18:12:11 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:11 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:11 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:11 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:11 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:11 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:11 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:11 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:11 INFO  OrExpression - Or expression was made, result: 1
-2021-05-13 18:12:11 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:11 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:11 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:11 INFO  NumberExpression - 51 is returning
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 10 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 10
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  SwapExpression - Swap interpretation was made, result: -72
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 78 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 78
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 5
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1200 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 1200
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 13 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3&4)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  SwapExpression - Swap interpretation was made, result: -7
-2021-05-13 18:12:12 INFO  NumberExpression - 9 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 9
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 9
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 6
-2021-05-13 18:12:12 INFO  NumberExpression - 47 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 6
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 1
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 51 is returning
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 10 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 10
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  SwapExpression - Swap interpretation was made, result: -72
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 78 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 78
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 5
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1200 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 1200
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 13 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3&4)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  SwapExpression - Swap interpretation was made, result: -7
-2021-05-13 18:12:12 INFO  NumberExpression - 9 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 9
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 9
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 6
-2021-05-13 18:12:12 INFO  NumberExpression - 47 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 6
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 1
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 51 is returning
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:12 INFO  NumberExpression - 10 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 10
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  SwapExpression - Swap interpretation was made, result: -72
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 78 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 78
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 1
-2021-05-13 18:12:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:12 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 5
-2021-05-13 18:12:12 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:12 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
-2021-05-13 18:12:12 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:12 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:12 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:12 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:12 INFO  NumberExpression - 1200 is returning
-2021-05-13 18:12:12 INFO  OrExpression - Or expression was made, result: 1200
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 13 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:16 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (3&4)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:16 INFO  SwapExpression - Swap interpretation was made, result: -7
-2021-05-13 18:12:16 INFO  NumberExpression - 9 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 9
-2021-05-13 18:12:16 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 9
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 5 is returning
-2021-05-13 18:12:16 INFO  XOrExpression - XOr interpretation was made, result: 4
-2021-05-13 18:12:16 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 6
-2021-05-13 18:12:16 INFO  NumberExpression - 47 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 6
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 4 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 6 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 4
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 7
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  NumberExpression - 7 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 1
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 1 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 3 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 2
-2021-05-13 18:12:16 INFO  NumberExpression - 10 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 10
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  InterpretEngine - Expression in braces was found : (~71&2)
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 71 is returning
-2021-05-13 18:12:16 INFO  SwapExpression - Swap interpretation was made, result: -72
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  AndExpression - And interpretation was made, result: 0
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 0 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 78 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 78
-2021-05-13 18:12:16 INFO  LeftShiftExpression - Left shift interpretation was made, result: 40
-2021-05-13 18:12:16 INFO  NumberExpression - 10 is returning
-2021-05-13 18:12:16 INFO  OrExpression - Or expression was made, result: 10
-2021-05-13 18:12:16 INFO  RightShiftExpression - Right shift interpretation was made, result: 2
-2021-05-13 18:12:16 INFO  SwapExpression - Swap interpretation was made, result: -11
-2021-05-13 18:12:16 INFO  XOrExpression - XOr interpretation was made, result: 8
-2021-05-13 18:12:16 INFO  InterpretEngine - Interpretation was made
-2021-05-13 18:12:16 INFO  Evaluator - Numbers in Expression was pushed in stack
-2021-05-13 18:12:16 INFO  Evaluator - Expression was evaluated
-2021-05-13 18:12:16 INFO  NumberExpression - 13 is returning
-2021-05-13 18:12:16 INFO  NumberExpression - 2 is returning
-2021-05-13 18:12:16 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 13 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&4)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -7
+2021-05-14 21:32:12 INFO  NumberExpression - 9 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 9
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 9
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 6
+2021-05-14 21:32:12 INFO  NumberExpression - 47 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 6
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 51 is returning
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 10 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 10
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -72
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 78 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 78
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 5
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1200 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1200
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 13 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&4)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -7
+2021-05-14 21:32:12 INFO  NumberExpression - 9 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 9
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 9
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 6
+2021-05-14 21:32:12 INFO  NumberExpression - 47 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 6
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 51 is returning
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 10 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 10
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -72
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 78 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 78
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 5
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1200 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1200
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 13 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&4)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -7
+2021-05-14 21:32:12 INFO  NumberExpression - 9 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 9
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 9
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 6
+2021-05-14 21:32:12 INFO  NumberExpression - 47 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 6
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 51 is returning
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:12 INFO  NumberExpression - 10 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 10
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (~71&2)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  SwapExpression - Swap interpretation was made, result: -72
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 78 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 78
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (2|5>>2&71)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  RightShiftExpression - Right shift interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 1
+2021-05-14 21:32:12 INFO  InterpretEngine - Expression in braces was found : (1^5|1&2<<1)
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:12 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 5
+2021-05-14 21:32:12 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:12 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:12 INFO  LeftShiftExpression - Left shift interpretation was made, result: 0
+2021-05-14 21:32:12 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:12 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:12 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:12 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:12 INFO  NumberExpression - 1200 is returning
+2021-05-14 21:32:12 INFO  OrExpression - Or expression was made, result: 1200
+2021-05-14 21:32:14 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 13 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:15 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (3&4)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:15 INFO  SwapExpression - Swap interpretation was made, result: -7
+2021-05-14 21:32:15 INFO  NumberExpression - 9 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 9
+2021-05-14 21:32:15 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 9
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (1^5|6&47)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 5 is returning
+2021-05-14 21:32:15 INFO  XOrExpression - XOr interpretation was made, result: 4
+2021-05-14 21:32:15 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 6
+2021-05-14 21:32:15 INFO  NumberExpression - 47 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 6
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (4&6|3)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 4 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 6 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 4
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (3|7|2)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 7
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (1&2&7|1)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  NumberExpression - 7 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 1
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (2&1>>2|2)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 1 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  RightShiftExpression - Right shift interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (3&2&2)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (2&3|2|10&2)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 3 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 2
+2021-05-14 21:32:15 INFO  NumberExpression - 10 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 10
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  InterpretEngine - Expression in braces was found : (~71&2)
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 71 is returning
+2021-05-14 21:32:15 INFO  SwapExpression - Swap interpretation was made, result: -72
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  AndExpression - And interpretation was made, result: 0
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 0 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 78 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 78
+2021-05-14 21:32:15 INFO  LeftShiftExpression - Left shift interpretation was made, result: 40
+2021-05-14 21:32:15 INFO  NumberExpression - 10 is returning
+2021-05-14 21:32:15 INFO  OrExpression - Or expression was made, result: 10
+2021-05-14 21:32:15 INFO  RightShiftExpression - Right shift interpretation was made, result: 2
+2021-05-14 21:32:15 INFO  SwapExpression - Swap interpretation was made, result: -11
+2021-05-14 21:32:15 INFO  XOrExpression - XOr interpretation was made, result: 8
+2021-05-14 21:32:15 INFO  InterpretEngine - Interpretation was made
+2021-05-14 21:32:15 INFO  Evaluator - Numbers in Expression was pushed in stack
+2021-05-14 21:32:15 INFO  Evaluator - Expression was evaluated
+2021-05-14 21:32:15 INFO  NumberExpression - 13 is returning
+2021-05-14 21:32:15 INFO  NumberExpression - 2 is returning
+2021-05-14 21:32:15 INFO  LeftShiftExpression - Left shift interpretation was made, result: 52

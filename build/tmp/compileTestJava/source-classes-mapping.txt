@@ -1,11 +1,3 @@
-com/epam/jwd/composer/impl/TextSentenceTest.java
- com.epam.jwd.composer.impl.TextSentenceTest
-com/epam/jwd/composer/impl/SymbolTest.java
- com.epam.jwd.composer.impl.SymbolTest
-com/epam/jwd/composer/impl/TextTest.java
- com.epam.jwd.composer.impl.TextTest
-com/epam/jwd/composer/impl/WordTest.java
- com.epam.jwd.composer.impl.WordTest
 com/epam/jwd/sort/SortParagraphsBySentencesAmountTest.java
  com.epam.jwd.sort.SortParagraphsBySentencesAmountTest
 com/epam/jwd/interpreter/SwapExpressionTest.java
@@ -14,14 +6,14 @@ com/epam/jwd/interpreter/AndExpressionTest.java
  com.epam.jwd.interpreter.AndExpressionTest
 com/epam/jwd/interpreter/LeftShiftExpressionTest.java
  com.epam.jwd.interpreter.LeftShiftExpressionTest
-com/epam/jwd/composer/impl/ParagraphTest.java
- com.epam.jwd.composer.impl.ParagraphTest
 com/epam/jwd/parser/impl/ParagraphParserTest.java
  com.epam.jwd.parser.impl.ParagraphParserTest
 com/epam/jwd/parser/impl/TextSentenceParserTest.java
  com.epam.jwd.parser.impl.TextSentenceParserTest
 com/epam/jwd/app/ApplicationTest.java
  com.epam.jwd.app.ApplicationTest
+com/epam/jwd/model/impl/ParagraphTest.java
+ com.epam.jwd.model.impl.ParagraphTest
 com/epam/jwd/sort/SortSentencesByWordsLengthTest.java
  com.epam.jwd.sort.SortSentencesByWordsLengthTest
 com/epam/jwd/interpreter/InterpretEngineTest.java
@@ -36,9 +28,17 @@ com/epam/jwd/interpreter/OrExpressionTest.java
  com.epam.jwd.interpreter.OrExpressionTest
 com/epam/jwd/parser/impl/WordParserTest.java
  com.epam.jwd.parser.impl.WordParserTest
+com/epam/jwd/model/impl/TextSentenceTest.java
+ com.epam.jwd.model.impl.TextSentenceTest
 com/epam/jwd/parser/impl/ExpressionParserTest.java
  com.epam.jwd.parser.impl.ExpressionParserTest
+com/epam/jwd/model/impl/TextTest.java
+ com.epam.jwd.model.impl.TextTest
+com/epam/jwd/model/impl/WordTest.java
+ com.epam.jwd.model.impl.WordTest
 com/epam/jwd/parser/impl/TextParserTest.java
  com.epam.jwd.parser.impl.TextParserTest
 com/epam/jwd/interpreter/XOrExpressionTest.java
  com.epam.jwd.interpreter.XOrExpressionTest
+com/epam/jwd/model/impl/SymbolTest.java
+ com.epam.jwd.model.impl.SymbolTest

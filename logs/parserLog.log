@@ -1,1097 +1,1097 @@
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: survived
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: -
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: not
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: only
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: (five)
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: centuries
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: but
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: also
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: leap
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: into
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 13<<2
-2021-05-13 18:12:11 INFO  ExpressionParser - Expression was interpreted, result: 52
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: electronic
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: survived
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result: -
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: not
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: only
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: (five)
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: centuries
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: but
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: also
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: leap
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Word was parsed, result: into
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:11 INFO  WordParser - Symbol was parsed, result: 13<<2
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 52
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: electronic
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: typesetting
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: remaining
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 3>>5
-2021-05-13 18:12:11 INFO  ExpressionParser - Expression was interpreted, result: 0
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: essentially
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
-2021-05-13 18:12:11 INFO  ExpressionParser - Expression was interpreted, result: 9
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: unchanged
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@1b416e2b
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: was
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: popularized
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: in
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: typesetting
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: remaining
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 3>>5
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 0
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: essentially
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 9
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: unchanged
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@3c88c4e9
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: was
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: popularized
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: in
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
-2021-05-13 18:12:11 INFO  ExpressionParser - Expression was interpreted, result: 51
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: release
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Letraset
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: sheets
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: containing
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 51
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: release
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Letraset
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: sheets
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: containing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: passages
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: and
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: more
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: recently
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: desktop
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: publishing
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: software
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Aldus
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: PageMaker
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: including
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: passages
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: and
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: recently
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: desktop
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: publishing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: software
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Aldus
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: PageMaker
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: including
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: versions
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@6f80b003
-2021-05-13 18:12:11 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: versions
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@43f5fbbf
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
 typesetting, remaining 0 essentially 9 unchanged. It was popularized in the 
 51 with the release of Letraset sheets containing Lorem Ipsum 
 passages, and more recently with desktop publishing software like Aldus PageMaker including 
 versions of Lorem Ipsum. 
 
 
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: long
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:11 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:11 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distracted
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: by
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: long
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distracted
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: by
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@7aea4244
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: The
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: point
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 78
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@30f84815
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: The
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: point
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 78
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: more-or-less
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: normal
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distribution
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: letters
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: as
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: opposed
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: to
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: (Content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more-or-less
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: normal
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distribution
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: letters
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: as
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: opposed
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: to
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: (Content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here)
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: making
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: look
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: English
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@1000f5b2
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here)
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: making
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: look
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: English
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@5cbc65b6
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
 page when looking at its layout. The point of using 78 
 Ipsum it that it has a more-or-less normal distribution of letters, as opposed to using (Content 
 here), content here, making it look like readable English. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@4554b2ae
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@555ca5c7
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
 looking at its layout. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Bye
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@4961e6
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Bye
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@ff49639
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
 
 
-2021-05-13 18:12:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@2819fbc9
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: survived
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: -
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: not
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: only
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: (five)
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: centuries
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: but
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: also
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: leap
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: into
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 13<<2
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 52
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: electronic
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@7dbedf32
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: survived
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: -
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: not
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: only
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: (five)
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: centuries
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: but
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: also
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: leap
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: into
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 13<<2
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 52
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: electronic
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: typesetting
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: remaining
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 3>>5
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 0
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: essentially
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 9
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: unchanged
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@48231a7b
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: was
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: popularized
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: in
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: typesetting
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: remaining
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 3>>5
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 0
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: essentially
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 9
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: unchanged
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@2cfbf2b5
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: was
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: popularized
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: in
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 51
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: release
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Letraset
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: sheets
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: containing
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 51
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: release
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Letraset
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: sheets
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: containing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: passages
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: and
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: more
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: recently
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: desktop
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: publishing
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: software
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Aldus
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: PageMaker
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: including
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: passages
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: and
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: recently
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: desktop
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: publishing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: software
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Aldus
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: PageMaker
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: including
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: versions
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@bee0019
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: versions
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@27665753
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
 typesetting, remaining 0 essentially 9 unchanged. It was popularized in the 
 51 with the release of Letraset sheets containing Lorem Ipsum 
 passages, and more recently with desktop publishing software like Aldus PageMaker including 
 versions of Lorem Ipsum. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: long
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distracted
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: by
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: long
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distracted
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: by
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@363a018e
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: The
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: point
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 78
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@46d3aea8
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: The
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: point
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 78
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: more-or-less
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: normal
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distribution
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: letters
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: as
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: opposed
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: to
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: (Content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more-or-less
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: normal
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distribution
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: letters
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: as
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: opposed
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: to
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: (Content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here)
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: making
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: look
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: English
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@544dba8e
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here)
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: making
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: look
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: English
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@22686494
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
 page when looking at its layout. The point of using 78 
 Ipsum it that it has a more-or-less normal distribution of letters, as opposed to using (Content 
 here), content here, making it look like readable English. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@46d92be
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@51f54436
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
 looking at its layout. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Bye
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@7ff8b4e2
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Bye
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@44bc5d94
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
 
 
-2021-05-13 18:12:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@19a8fce2
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: survived
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: -
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: not
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: only
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: (five)
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: centuries
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: but
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: also
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: leap
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: into
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 13<<2
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 52
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: electronic
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@1fc10d45
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: survived
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: -
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: not
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: only
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: (five)
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: centuries
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: but
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: also
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: leap
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: into
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 13<<2
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 52
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: electronic
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: typesetting
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: remaining
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 3>>5
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 0
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: essentially
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 9
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: unchanged
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@77cc6811
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: was
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: popularized
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: in
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: typesetting
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: remaining
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 3>>5
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 0
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: essentially
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ~6&9|(3&4)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 9
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: unchanged
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@2a09e270
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: was
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: popularized
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: in
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 51
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: release
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Letraset
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: sheets
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: containing
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 5(1&2&(3|(4&(1^5|6&47)|3)|2)|1)
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 51
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: release
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Letraset
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: sheets
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: containing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: passages
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: and
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: more
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: recently
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: with
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: desktop
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: publishing
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: software
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Aldus
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: PageMaker
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: including
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: passages
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: and
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: recently
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: with
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: desktop
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: publishing
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: software
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Aldus
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: PageMaker
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: including
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: versions
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Lorem
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@4576f59
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: versions
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Lorem
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@7c6a77b1
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It has survived - not only (five) centuries, but also the leap into 52 electronic 
 typesetting, remaining 0 essentially 9 unchanged. It was popularized in the 
 51 with the release of Letraset sheets containing Lorem Ipsum 
 passages, and more recently with desktop publishing software like Aldus PageMaker including 
 versions of Lorem Ipsum. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: long
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distracted
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: by
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: long
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distracted
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: by
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@64d6fa78
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: The
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: point
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 78
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@5d16ae66
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: The
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: point
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (~71&(2&3|(3&(2&1>>2|2)&2)|10&2))|78
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 78
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Ipsum
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: has
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: more-or-less
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: normal
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: distribution
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: letters
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: as
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: opposed
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: to
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: using
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: (Content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Ipsum
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: has
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: more-or-less
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: normal
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: distribution
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: letters
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: as
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: opposed
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: to
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: using
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: (Content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here)
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: content
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: here
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: making
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: it
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: look
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: like
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: readable
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: English
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@61ba526
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here)
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: content
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: here
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: making
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: it
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: look
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: like
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: readable
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: English
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@25dab24
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a long established fact that a reader will be distracted by the readable content of a 
 page when looking at its layout. The point of using 78 
 Ipsum it that it has a more-or-less normal distribution of letters, as opposed to using (Content 
 here), content here, making it look like readable English. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: It
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
-2021-05-13 18:12:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: established
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: fact
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: that
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: a
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: reader
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: will
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: be
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: of
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: page
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: when
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: It
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: (1^5|1&2<<(2|5>>2&71))|1200
+2021-05-14 21:32:12 INFO  ExpressionParser - Expression was interpreted, result: 1200
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: established
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: fact
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: that
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: a
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: reader
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: will
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: be
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: of
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: page
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: when
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: looking
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: at
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: its
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: layout
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@1203c914
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: looking
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: at
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: its
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: layout
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@67a2c37d
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	It is a 1200 established fact that a reader will be of page when 
 looking at its layout. 
 
 
-2021-05-13 18:12:12 INFO  WordParser - Word was parsed, result: Bye
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:12 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@2d9151aa
-2021-05-13 18:12:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
+2021-05-14 21:32:12 INFO  WordParser - Word was parsed, result: Bye
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:12 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:12 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@48dae7c7
+2021-05-14 21:32:12 INFO  ParagraphParser - Paragraph was parsed, result: 	Bye. 
 
 
-2021-05-13 18:12:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@7e476b5a
-2021-05-13 18:12:16 INFO  ExpressionParser - Expression was interpreted, result: 52
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: this
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: String
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@3fd99d42
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is the test String. 
+2021-05-14 21:32:12 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@20d70524
+2021-05-14 21:32:15 INFO  ExpressionParser - Expression was interpreted, result: 52
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: this
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: String
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@567408b8
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is the test String. 
 
 
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: this
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: String
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@47789045
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is the test String. 
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: this
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: String
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@24f15738
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is the test String. 
 
 
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Another
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: paragraph
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@7e03863e
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Another paragraph. 
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Another
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: paragraph
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@7c72f3e4
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Another paragraph. 
 
 
-2021-05-13 18:12:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@79da33b0
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: this
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: String
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@a9a8244
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: this
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: text
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@963c1ea
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is test text. 
+2021-05-14 21:32:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@20576b6e
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: this
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: String
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@56108614
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: this
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: text
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@78764379
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is test text. 
 
 
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: And
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: another
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: one
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@6bb3848e
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	And another one. 
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: And
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: another
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: one
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@13706240
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	And another one. 
 
 
-2021-05-13 18:12:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@435c6dfb
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: Hello
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: ,
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: this
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: string
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@1d0a4f76
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is test string. 
+2021-05-14 21:32:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@867775b
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: Hello
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: ,
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: this
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: string
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@5a157065
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	Hello, this is test string. 
 
 
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: This
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: another
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: string
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@a71a1ac
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: And
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: another
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: one
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@7d91d398
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: And
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: other
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@5d024a64
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is another string. And another one. And other. 
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: This
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: another
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: string
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@10329dd5
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: And
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: another
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: one
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@c09ff1
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: And
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: other
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@332efd1d
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is another string. And another one. And other. 
 
 
-2021-05-13 18:12:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@12bccf4d
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: This
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: the
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: string
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@29a74b9d
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is the test string. 
+2021-05-14 21:32:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@42492545
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: This
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: the
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: string
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@6a82f95
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is the test string. 
 
 
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: This
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: is
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: another
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: test
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  WordParser - Word was parsed, result: string
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result: .
-2021-05-13 18:12:16 INFO  WordParser - Symbol was parsed, result:  
-2021-05-13 18:12:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.composer.impl.TextSentence@5d153f43
-2021-05-13 18:12:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is another test string. 
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: This
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: is
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: another
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: test
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  WordParser - Word was parsed, result: string
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result: .
+2021-05-14 21:32:16 INFO  WordParser - Symbol was parsed, result:  
+2021-05-14 21:32:16 INFO  SentenceParser - Sentence was parsed, result : com.epam.jwd.model.impl.TextSentence@dc05108
+2021-05-14 21:32:16 INFO  ParagraphParser - Paragraph was parsed, result: 	This is another test string. 
 
 
-2021-05-13 18:12:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.composer.impl.Text@737f384e
+2021-05-14 21:32:16 INFO  TextParser - Text was parsed, result: com.epam.jwd.model.impl.Text@45bed2f8

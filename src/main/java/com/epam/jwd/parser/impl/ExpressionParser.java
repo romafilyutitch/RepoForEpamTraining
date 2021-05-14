@@ -1,7 +1,7 @@
 package com.epam.jwd.parser.impl;
 
-import com.epam.jwd.composer.Lexeme;
-import com.epam.jwd.composer.impl.Word;
+import com.epam.jwd.model.Lexeme;
+import com.epam.jwd.model.impl.Word;
 import com.epam.jwd.interpreter.impl.InterpretEngine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

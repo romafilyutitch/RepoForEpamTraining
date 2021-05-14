@@ -1,62 +1,62 @@
-com/epam/jwd/composer/impl/Symbol.java
- com.epam.jwd.composer.impl.Symbol
-com/epam/jwd/composer/impl/TextSentence.java
- com.epam.jwd.composer.impl.TextSentence
-com/epam/jwd/composer/Lexeme.java
- com.epam.jwd.composer.Lexeme
-com/epam/jwd/sort/SortStrategy.java
- com.epam.jwd.sort.SortStrategy
+com/epam/jwd/interpreter/impl/RightShiftExpression.java
+ com.epam.jwd.interpreter.impl.RightShiftExpression
+com/epam/jwd/interpreter/impl/LeftShiftExpression.java
+ com.epam.jwd.interpreter.impl.LeftShiftExpression
+com/epam/jwd/model/impl/Word.java
+ com.epam.jwd.model.impl.Word
+com/epam/jwd/parser/impl/ExpressionParser.java
+ com.epam.jwd.parser.impl.ExpressionParser
+com/epam/jwd/interpreter/impl/NumberExpression.java
+ com.epam.jwd.interpreter.impl.NumberExpression
+com/epam/jwd/interpreter/impl/OrExpression.java
+ com.epam.jwd.interpreter.impl.OrExpression
+com/epam/jwd/interpreter/impl/SwapExpression.java
+ com.epam.jwd.interpreter.impl.SwapExpression
 com/epam/jwd/parser/impl/ParagraphParser.java
  com.epam.jwd.parser.impl.ParagraphParser
 com/epam/jwd/exeption/IncorrectTextException.java
  com.epam.jwd.exeption.IncorrectTextException
-com/epam/jwd/interpreter/Expression.java
- com.epam.jwd.interpreter.Expression
+com/epam/jwd/interpreter/impl/InterpretEngine.java
+ com.epam.jwd.interpreter.impl.InterpretEngine
+com/epam/jwd/model/impl/Paragraph.java
+ com.epam.jwd.model.impl.Paragraph
 com/epam/jwd/util/IOUtil.java
  com.epam.jwd.util.IOUtil
 com/epam/jwd/sort/SortSentencesByWordsLength.java
  com.epam.jwd.sort.SortSentencesByWordsLength
-com/epam/jwd/composer/impl/Text.java
- com.epam.jwd.composer.impl.Text
 com/epam/jwd/sort/SortBySymbolAmountInDescendingOrderThenInNaturalOrder.java
  com.epam.jwd.sort.SortBySymbolAmountInDescendingOrderThenInNaturalOrder
 com/epam/jwd/parser/Parser.java
  com.epam.jwd.parser.Parser
 com/epam/jwd/parser/impl/TextParser.java
  com.epam.jwd.parser.impl.TextParser
-com/epam/jwd/app/Application.java
- com.epam.jwd.app.Application
-com/epam/jwd/composer/impl/Paragraph.java
- com.epam.jwd.composer.impl.Paragraph
-com/epam/jwd/composer/impl/Word.java
- com.epam.jwd.composer.impl.Word
-com/epam/jwd/parser/impl/SentenceParser.java
- com.epam.jwd.parser.impl.SentenceParser
+com/epam/jwd/interpreter/impl/AndExpression.java
+ com.epam.jwd.interpreter.impl.AndExpression
 com/epam/jwd/parser/impl/WordParser.java
  com.epam.jwd.parser.impl.WordParser
 com/epam/jwd/sort/SortParagraphsBySentencesAmount.java
  com.epam.jwd.sort.SortParagraphsBySentencesAmount
+com/epam/jwd/model/impl/TextSentence.java
+ com.epam.jwd.model.impl.TextSentence
 com/epam/jwd/parser/impl/BaseParser.java
  com.epam.jwd.parser.impl.BaseParser
-com/epam/jwd/interpreter/impl/RightShiftExpression.java
- com.epam.jwd.interpreter.impl.RightShiftExpression
-com/epam/jwd/interpreter/impl/SwapExpression.java
- com.epam.jwd.interpreter.impl.SwapExpression
-com/epam/jwd/interpreter/impl/LeftShiftExpression.java
- com.epam.jwd.interpreter.impl.LeftShiftExpression
-com/epam/jwd/interpreter/impl/XOrExpression.java
- com.epam.jwd.interpreter.impl.XOrExpression
-com/epam/jwd/interpreter/impl/InterpretEngine.java
- com.epam.jwd.interpreter.impl.InterpretEngine
-com/epam/jwd/parser/impl/ExpressionParser.java
- com.epam.jwd.parser.impl.ExpressionParser
-com/epam/jwd/parser/TextParserFactory.java
- com.epam.jwd.parser.TextParserFactory
-com/epam/jwd/interpreter/impl/AndExpression.java
- com.epam.jwd.interpreter.impl.AndExpression
-com/epam/jwd/interpreter/impl/NumberExpression.java
- com.epam.jwd.interpreter.impl.NumberExpression
+com/epam/jwd/model/impl/Text.java
+ com.epam.jwd.model.impl.Text
 com/epam/jwd/interpreter/impl/Evaluator.java
  com.epam.jwd.interpreter.impl.Evaluator
-com/epam/jwd/interpreter/impl/OrExpression.java
- com.epam.jwd.interpreter.impl.OrExpression
+com/epam/jwd/model/Lexeme.java
+ com.epam.jwd.model.Lexeme
+com/epam/jwd/app/Application.java
+ com.epam.jwd.app.Application
+com/epam/jwd/interpreter/impl/XOrExpression.java
+ com.epam.jwd.interpreter.impl.XOrExpression
+com/epam/jwd/model/impl/Symbol.java
+ com.epam.jwd.model.impl.Symbol
+com/epam/jwd/parser/TextParserFactory.java
+ com.epam.jwd.parser.TextParserFactory
+com/epam/jwd/interpreter/Expression.java
+ com.epam.jwd.interpreter.Expression
+com/epam/jwd/parser/impl/SentenceParser.java
+ com.epam.jwd.parser.impl.SentenceParser
+com/epam/jwd/sort/SortStrategy.java
+ com.epam.jwd.sort.SortStrategy

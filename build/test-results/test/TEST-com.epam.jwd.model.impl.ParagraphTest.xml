@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.jwd.model.impl.ParagraphTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-14T18:32:15" hostname="DESKTOP-NUHM85O" time="0.064">
+  <properties/>
+  <testcase name="addLexeme()" classname="com.epam.jwd.model.impl.ParagraphTest" time="0.013"/>
+  <testcase name="getAsList()" classname="com.epam.jwd.model.impl.ParagraphTest" time="0.013"/>
+  <testcase name="getAsString()" classname="com.epam.jwd.model.impl.ParagraphTest" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
