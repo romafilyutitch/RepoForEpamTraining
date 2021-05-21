@@ -15,6 +15,10 @@ public class ProxyConnection implements Connection {
         this.connection = connection;
     }
 
+    public Connection getConnection() {
+        return connection;
+    }
+
     @Override
     public Statement createStatement() throws SQLException {
         return connection.createStatement();

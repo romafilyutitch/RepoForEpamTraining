@@ -4,6 +4,7 @@ import connectionPool.ConnectionPool;
 import connectionPool.ProxyConnection;
 import exception.ConnectionsPoolActionException;
 import exception.ConnectionPoolInitializationException;
+import properties.PoolConnectionProperties;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -17,9 +18,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public enum OrdinaryConnectionPool implements ConnectionPool {
     INSTANCE;
-    private static final int MINIMUM_POOL_SIZE = 10;
-    private static final int MAXIMUM_POOL_SIZE = 30;
-    private static final int RESIZE_QUANTITY = 5;
+
+    private final int MINIMUM_POOL_SIZE = PoolConnectionProperties.getMinimalPoolSize();
+    private final int MAXIMUM_POOL_SIZE = PoolConnectionProperties.getMaximalPoolSize();
+    private final int RESIZE_QUANTITY = PoolConnectionProperties.getResizeQuantity();
 
     private final BlockingQueue<Connection> freeConnectionsQueue = new ArrayBlockingQueue<>(MAXIMUM_POOL_SIZE);
     private final CopyOnWriteArraySet<Connection> takenConnections = new CopyOnWriteArraySet<>();
@@ -66,21 +68,28 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
         if (isInitialized.compareAndSet(false, true)) {
             registerDrivers();
             try {
-                for (int i = 0; i < MINIMUM_POOL_SIZE; i++) {
-                    final Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb?serverTimezone=UTC", "root", "050399");
-                    final ProxyConnection proxyConnection = new ProxyConnection(connection);
-                    freeConnectionsQueue.put(proxyConnection);
-                }
-                timer.schedule(poolResizeTimerTask, 1000, 5000);
+                addConnectionsToPool(MINIMUM_POOL_SIZE);
             } catch (SQLException | InterruptedException e) {
-                System.out.println(e.getMessage());
+                System.out.print(e.getMessage());
                 isInitialized.set(false);
                 throw new ConnectionPoolInitializationException("failed to open connection", e);
             }
+            timer.schedule(poolResizeTimerTask, PoolConnectionProperties.getPoolResizeTimerTaskCheckDelayTime(), PoolConnectionProperties.getPoolResizeTimerTaskCheckPeriodTime());
         } else {
             timer.cancel();
             throw new IllegalStateException("Cannot make initialization because pool is already initialized");
         }
+    }
+
+    private void addConnectionsToPool(int amountOfAddedConnections) throws SQLException, InterruptedException {
+        if (amountOfAddedConnections < 0) {
+            throw new IllegalArgumentException("amount of added connections is negative");
+        }
+            for (int i = 0; i < amountOfAddedConnections; i++) {
+                final Connection connection = DriverManager.getConnection(PoolConnectionProperties.getUrl(), PoolConnectionProperties.getUserName(), PoolConnectionProperties.getPassword());
+                final ProxyConnection proxyConnection = new ProxyConnection(connection);
+                freeConnectionsQueue.put(proxyConnection);
+            }
     }
 
     @Override
@@ -109,7 +118,8 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
     private void closeTakenConnections() {
         for (Connection connection : takenConnections) {
             try {
-                connection.close();
+                ProxyConnection proxyConnection = (ProxyConnection) connection;
+                proxyConnection.getConnection().close();
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
@@ -119,7 +129,8 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
     private void closeFreeConnections() {
         for (Connection connection : freeConnectionsQueue) {
             try {
-                connection.close();
+                ProxyConnection proxyConnection = (ProxyConnection) connection;
+                proxyConnection.getConnection().close();
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
@@ -128,7 +139,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
 
     private void registerDrivers() throws ConnectionPoolInitializationException {
         try {
-            DriverManager.registerDriver(DriverManager.getDriver("jdbc:mysql://localhost:3306/librarydb"));
+            DriverManager.registerDriver(DriverManager.getDriver(PoolConnectionProperties.getUrl()));
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             isInitialized.set(false);
@@ -168,18 +179,14 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
 
         private boolean isNeedToGrowPool() {
             return freeConnectionsQueue.size() < takenConnections.size() * 0.25
-                    && freeConnectionsQueue.size() + takenConnections.size() < 30;
+                    && freeConnectionsQueue.size() + takenConnections.size() < MAXIMUM_POOL_SIZE;
         }
 
         private void addConnections() {
-            for (int i = 0; i < RESIZE_QUANTITY; i++) {
-                try {
-                    final Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb?serverTimezone=UTC", "root", "050399");
-                    final ProxyConnection proxyConnection = new ProxyConnection(connection);
-                    freeConnectionsQueue.put(proxyConnection);
-                } catch (SQLException | InterruptedException e) {
-                    System.out.println(e.getMessage());
-                }
+            try {
+                addConnectionsToPool(RESIZE_QUANTITY);
+            } catch (SQLException | InterruptedException e) {
+                System.out.println(e);
             }
         }
 
