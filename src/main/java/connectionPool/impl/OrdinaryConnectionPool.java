@@ -1,6 +1,7 @@
 package connectionPool.impl;
 
 import connectionPool.ConnectionPool;
+import connectionPool.ProxyConnection;
 import exception.ConnectionsPoolActionException;
 import exception.ConnectionPoolInitializationException;
 
@@ -14,8 +15,8 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class OrdinaryConnectionPool implements ConnectionPool {
-
+public enum OrdinaryConnectionPool implements ConnectionPool {
+    INSTANCE;
     private static final int MINIMUM_POOL_SIZE = 10;
     private static final int MAXIMUM_POOL_SIZE = 30;
     private static final int RESIZE_QUANTITY = 5;
@@ -47,12 +48,16 @@ public class OrdinaryConnectionPool implements ConnectionPool {
             throw new IllegalStateException("Pool is not initialized");
         }
         checkReturnedConnection(connection);
-        try {
-            takenConnections.remove(connection);
-            freeConnectionsQueue.put(connection);
-        } catch (InterruptedException e) {
-            System.out.println(e.getMessage());
-            throw new ConnectionsPoolActionException("Could not return connection", e);
+        if (connection instanceof ProxyConnection) {
+            try {
+                takenConnections.remove(connection);
+                freeConnectionsQueue.put(connection);
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+                throw new ConnectionsPoolActionException("Could not return connection", e);
+            }
+        } else {
+            throw new IllegalArgumentException("Connection is not proxy connection");
         }
     }
 
@@ -63,7 +68,8 @@ public class OrdinaryConnectionPool implements ConnectionPool {
             try {
                 for (int i = 0; i < MINIMUM_POOL_SIZE; i++) {
                     final Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb?serverTimezone=UTC", "root", "050399");
-                    freeConnectionsQueue.put(connection);
+                    final ProxyConnection proxyConnection = new ProxyConnection(connection);
+                    freeConnectionsQueue.put(proxyConnection);
                 }
                 timer.schedule(poolResizeTimerTask, 1000, 5000);
             } catch (SQLException | InterruptedException e) {
@@ -168,7 +174,9 @@ public class OrdinaryConnectionPool implements ConnectionPool {
         private void addConnections() {
             for (int i = 0; i < RESIZE_QUANTITY; i++) {
                 try {
-                    freeConnectionsQueue.put(DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb?serverTimezone=UTC", "root", "050399"));
+                    final Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb?serverTimezone=UTC", "root", "050399");
+                    final ProxyConnection proxyConnection = new ProxyConnection(connection);
+                    freeConnectionsQueue.put(proxyConnection);
                 } catch (SQLException | InterruptedException e) {
                     System.out.println(e.getMessage());
                 }
