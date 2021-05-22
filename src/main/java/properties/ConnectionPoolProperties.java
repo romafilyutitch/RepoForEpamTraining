@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class PoolConnectionProperties {
+public class ConnectionPoolProperties {
     private static final String CONNECTION_POOL_PROPERTIES_PATH = "src\\main\\resources\\connectionPool.properties";
     private static final Properties connectionPoolProperties ;
     static {

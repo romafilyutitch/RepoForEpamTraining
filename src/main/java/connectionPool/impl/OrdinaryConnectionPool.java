@@ -2,15 +2,17 @@ package connectionPool.impl;
 
 import connectionPool.ConnectionPool;
 import connectionPool.ProxyConnection;
-import exception.ConnectionsPoolActionException;
 import exception.ConnectionPoolInitializationException;
-import properties.PoolConnectionProperties;
+import exception.ConnectionsPoolActionException;
+import properties.ConnectionPoolProperties;
 
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -19,20 +21,33 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public enum OrdinaryConnectionPool implements ConnectionPool {
     INSTANCE;
 
-    private final int MINIMUM_POOL_SIZE = PoolConnectionProperties.getMinimalPoolSize();
-    private final int MAXIMUM_POOL_SIZE = PoolConnectionProperties.getMaximalPoolSize();
-    private final int RESIZE_QUANTITY = PoolConnectionProperties.getResizeQuantity();
+    public static final String POOL_IS_NOT_INITIALIZED_MESSAGE = "Pool is not initialized";
+    public static final String COULD_NOT_TAKE_CONNECTION_MESSAGE = "Could not take connection";
+    public static final String COULD_NOT_RETURN_CONNECTION_MESSAGE = "Could not return connection";
+    public static final String CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE = "Connection is not proxy connection";
+    public static final String FAILED_TO_OPEN_CONNECTION_MESSAGE = "failed to open connection";
+    public static final String POOL_IS_INITIALIZED_EXCEPTION_MESSAGE = "Cannot make initialization. Pool is already initialized";
+    public static final String NEGATIVE_AMOUNT_OF_ADDED_CONNECTIONS_MESSAGE = "amount of added connections is negative";
+    public static final String CONNECTION_IS_NULL_MESSAGE = "Connection is null";
+    public static final String RETURNED_CONNECTION_IS_NOT_TAKEN_CONNECTION_MESSAGE = "Returned connection is not taken connection";
+    public static final String DRIVERS_REGISTRATION_FAILED_MESSAGE = "Driver registration failed";
+
+    private final int MINIMUM_POOL_SIZE = ConnectionPoolProperties.getMinimalPoolSize();
+    private final int MAXIMUM_POOL_SIZE = ConnectionPoolProperties.getMaximalPoolSize();
+    private final int RESIZE_QUANTITY = ConnectionPoolProperties.getResizeQuantity();
+    private final int POOL_RESIZE_CHECK_DELAY_TIME =  ConnectionPoolProperties.getPoolResizeTimerTaskCheckDelayTime();
+    private final int POOL_RESIZE_CHECK_PERIOD_TIME = ConnectionPoolProperties.getPoolResizeTimerTaskCheckPeriodTime();
 
     private final BlockingQueue<Connection> freeConnectionsQueue = new ArrayBlockingQueue<>(MAXIMUM_POOL_SIZE);
     private final CopyOnWriteArraySet<Connection> takenConnections = new CopyOnWriteArraySet<>();
     private final AtomicBoolean isInitialized = new AtomicBoolean(false);
-    private final Timer timer = new Timer();
+    private final Timer timer = new Timer(true);
     private final PoolResizeTimerTask poolResizeTimerTask = new PoolResizeTimerTask();
 
     @Override
     public Connection takeConnection() throws ConnectionsPoolActionException {
         if (!isInitialized.get()) {
-            throw new IllegalStateException("Pool is not initialized");
+            throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
         }
         try {
             final Connection connection = freeConnectionsQueue.take();
@@ -40,14 +55,14 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             return connection;
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
-            throw new ConnectionsPoolActionException("Could not take connection", e);
+            throw new ConnectionsPoolActionException(COULD_NOT_TAKE_CONNECTION_MESSAGE, e);
         }
     }
 
     @Override
     public void returnConnection(Connection connection) throws ConnectionsPoolActionException {
         if (!isInitialized.get()) {
-            throw new IllegalStateException("Pool is not initialized");
+            throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
         }
         checkReturnedConnection(connection);
         if (connection instanceof ProxyConnection) {
@@ -56,10 +71,10 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                 freeConnectionsQueue.put(connection);
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
-                throw new ConnectionsPoolActionException("Could not return connection", e);
+                throw new ConnectionsPoolActionException(COULD_NOT_RETURN_CONNECTION_MESSAGE, e);
             }
         } else {
-            throw new IllegalArgumentException("Connection is not proxy connection");
+            throw new IllegalArgumentException(CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE);
         }
     }
 
@@ -72,24 +87,24 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             } catch (SQLException | InterruptedException e) {
                 System.out.print(e.getMessage());
                 isInitialized.set(false);
-                throw new ConnectionPoolInitializationException("failed to open connection", e);
+                deregisterDrivers();
+                throw new ConnectionPoolInitializationException(FAILED_TO_OPEN_CONNECTION_MESSAGE, e);
             }
-            timer.schedule(poolResizeTimerTask, PoolConnectionProperties.getPoolResizeTimerTaskCheckDelayTime(), PoolConnectionProperties.getPoolResizeTimerTaskCheckPeriodTime());
+            timer.schedule(poolResizeTimerTask, POOL_RESIZE_CHECK_DELAY_TIME, POOL_RESIZE_CHECK_PERIOD_TIME);
         } else {
-            timer.cancel();
-            throw new IllegalStateException("Cannot make initialization because pool is already initialized");
+            throw new IllegalStateException(POOL_IS_INITIALIZED_EXCEPTION_MESSAGE);
         }
     }
 
     private void addConnectionsToPool(int amountOfAddedConnections) throws SQLException, InterruptedException {
         if (amountOfAddedConnections < 0) {
-            throw new IllegalArgumentException("amount of added connections is negative");
+            throw new IllegalArgumentException(NEGATIVE_AMOUNT_OF_ADDED_CONNECTIONS_MESSAGE);
         }
-            for (int i = 0; i < amountOfAddedConnections; i++) {
-                final Connection connection = DriverManager.getConnection(PoolConnectionProperties.getUrl(), PoolConnectionProperties.getUserName(), PoolConnectionProperties.getPassword());
-                final ProxyConnection proxyConnection = new ProxyConnection(connection);
-                freeConnectionsQueue.put(proxyConnection);
-            }
+        for (int i = 0; i < amountOfAddedConnections; i++) {
+            final Connection connection = DriverManager.getConnection(ConnectionPoolProperties.getUrl(), ConnectionPoolProperties.getUserName(), ConnectionPoolProperties.getPassword());
+            final ProxyConnection proxyConnection = new ProxyConnection(connection);
+            freeConnectionsQueue.put(proxyConnection);
+        }
     }
 
     @Override
@@ -99,19 +114,18 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             freeConnectionsQueue.clear();
             closeTakenConnections();
             takenConnections.clear();
-            timer.cancel();
             deregisterDrivers();
         } else {
-            throw new IllegalStateException("Cannot destroy connection pool because pool is not initialized");
+            throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
         }
     }
 
     private void checkReturnedConnection(Connection connection) {
         if (connection == null) {
-            throw new NullPointerException("Connection is null");
+            throw new NullPointerException(CONNECTION_IS_NULL_MESSAGE);
         }
         if (!takenConnections.contains(connection)) {
-            throw new IllegalArgumentException("Connection " + connection + " is not taken connection");
+            throw new IllegalArgumentException(RETURNED_CONNECTION_IS_NOT_TAKEN_CONNECTION_MESSAGE);
         }
     }
 
@@ -139,11 +153,11 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
 
     private void registerDrivers() throws ConnectionPoolInitializationException {
         try {
-            DriverManager.registerDriver(DriverManager.getDriver(PoolConnectionProperties.getUrl()));
+            DriverManager.registerDriver(DriverManager.getDriver(ConnectionPoolProperties.getUrl()));
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             isInitialized.set(false);
-            throw new ConnectionPoolInitializationException("Driver register failed", e);
+            throw new ConnectionPoolInitializationException(DRIVERS_REGISTRATION_FAILED_MESSAGE, e);
         }
     }
 
@@ -196,7 +210,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                     Connection connectionToClose = freeConnectionsQueue.take();
                     connectionToClose.close();
                 } catch (SQLException | InterruptedException ex) {
-                   System.out.println(ex.getMessage());
+                    System.out.println(ex.getMessage());
                 }
             }
         }
