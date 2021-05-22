@@ -2,9 +2,9 @@ package com.epam.jwd.final_task.connectionPool;
 
 import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
 import com.epam.jwd.final_task.exception.ConnectionsPoolActionException;
+import com.epam.jwd.final_task.properties.ConnectionPoolProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.epam.jwd.final_task.properties.ConnectionPoolProperties;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -20,6 +20,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public enum OrdinaryConnectionPool implements ConnectionPool {
     INSTANCE;
+
     private static final Logger logger = LogManager.getLogger(OrdinaryConnectionPool.class);
 
     public static final String POOL_IS_NOT_INITIALIZED_MESSAGE = "Pool is not initialized";
@@ -28,7 +29,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
     public static final String CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE = "Connection is not proxy connection";
     public static final String FAILED_TO_OPEN_CONNECTION_MESSAGE = "failed to open connection";
     public static final String POOL_IS_INITIALIZED_EXCEPTION_MESSAGE = "Cannot make initialization. Pool is already initialized";
-    public static final String NEGATIVE_AMOUNT_OF_ADDED_CONNECTIONS_MESSAGE = "amount of added connections is negative";
+    public static final String NEGATIVE_ARGUMENT_MESSAGE = "negative argument";
     public static final String CONNECTION_IS_NULL_MESSAGE = "Connection is null";
     public static final String RETURNED_CONNECTION_IS_NOT_TAKEN_CONNECTION_MESSAGE = "Returned connection is not taken connection";
     public static final String DRIVERS_REGISTRATION_FAILED_MESSAGE = "Driver registration failed";
@@ -36,7 +37,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
     private final int MINIMUM_POOL_SIZE = ConnectionPoolProperties.getMinimalPoolSize();
     private final int MAXIMUM_POOL_SIZE = ConnectionPoolProperties.getMaximalPoolSize();
     private final int RESIZE_QUANTITY = ConnectionPoolProperties.getResizeQuantity();
-    private final int POOL_RESIZE_CHECK_DELAY_TIME =  ConnectionPoolProperties.getPoolResizeTimerTaskCheckDelayTime();
+    private final int POOL_RESIZE_CHECK_DELAY_TIME = ConnectionPoolProperties.getPoolResizeTimerTaskCheckDelayTime();
     private final int POOL_RESIZE_CHECK_PERIOD_TIME = ConnectionPoolProperties.getPoolResizeTimerTaskCheckPeriodTime();
 
     private final BlockingQueue<Connection> freeConnectionsQueue = new ArrayBlockingQueue<>(MAXIMUM_POOL_SIZE);
@@ -84,7 +85,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
         if (isInitialized.compareAndSet(false, true)) {
             registerDrivers();
             try {
-                addConnectionsToPool(MINIMUM_POOL_SIZE);
+                addFreeConnectionsToPool(MINIMUM_POOL_SIZE);
             } catch (SQLException | InterruptedException e) {
                 logger.error(e);
                 isInitialized.set(false);
@@ -94,17 +95,6 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             timer.schedule(poolResizeTimerTask, POOL_RESIZE_CHECK_DELAY_TIME, POOL_RESIZE_CHECK_PERIOD_TIME);
         } else {
             throw new IllegalStateException(POOL_IS_INITIALIZED_EXCEPTION_MESSAGE);
-        }
-    }
-
-    private void addConnectionsToPool(int amountOfAddedConnections) throws SQLException, InterruptedException {
-        if (amountOfAddedConnections < 0) {
-            throw new IllegalArgumentException(NEGATIVE_AMOUNT_OF_ADDED_CONNECTIONS_MESSAGE);
-        }
-        for (int i = 0; i < amountOfAddedConnections; i++) {
-            final Connection connection = DriverManager.getConnection(ConnectionPoolProperties.getUrl(), ConnectionPoolProperties.getUserName(), ConnectionPoolProperties.getPassword());
-            final ProxyConnection proxyConnection = new ProxyConnection(connection);
-            freeConnectionsQueue.put(proxyConnection);
         }
     }
 
@@ -118,6 +108,27 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             deregisterDrivers();
         } else {
             throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
+        }
+    }
+
+    private void addFreeConnectionsToPool(int amountOfAddedConnections) throws SQLException, InterruptedException {
+        if (amountOfAddedConnections < 0) {
+            throw new IllegalArgumentException(NEGATIVE_ARGUMENT_MESSAGE);
+        }
+        for (int i = 0; i < amountOfAddedConnections; i++) {
+            final Connection connection = DriverManager.getConnection(ConnectionPoolProperties.getUrl(), ConnectionPoolProperties.getUserName(), ConnectionPoolProperties.getPassword());
+            final ProxyConnection proxyConnection = new ProxyConnection(connection);
+            freeConnectionsQueue.put(proxyConnection);
+        }
+    }
+
+    private void removeFreeConnectionsFromPool(int amountOfRemovedConnections) throws SQLException, InterruptedException {
+        if (amountOfRemovedConnections < 0) {
+            throw new IllegalStateException(NEGATIVE_ARGUMENT_MESSAGE);
+        }
+        for (int i = 0; i < amountOfRemovedConnections; i++) {
+            ProxyConnection proxyConnection = (ProxyConnection) freeConnectionsQueue.take();
+            proxyConnection.getConnection().close();
         }
     }
 
@@ -181,12 +192,16 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             logger.info("Free connections = " + freeConnectionsQueue.size() +
                     ", taken connections = " + takenConnections.size() +
                     ", total connections amount = " + (freeConnectionsQueue.size() + takenConnections.size()));
-            if (isNeedToGrowPool()) {
-                logger.info("Action is grow pool");
-                addConnections();
-            } else if (isNeedToTrimPool()) {
-                logger.info("Action is trim pool");
-                closeConnections();
+            try {
+                if (isNeedToGrowPool()) {
+                    logger.info("Action is grow pool");
+                    addFreeConnectionsToPool(RESIZE_QUANTITY);
+                } else if (isNeedToTrimPool()) {
+                    logger.info("Action is trim pool");
+                    removeFreeConnectionsFromPool(RESIZE_QUANTITY);
+                }
+            } catch (SQLException | InterruptedException e) {
+                logger.error(e);
             }
         }
 
@@ -198,25 +213,6 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
         private boolean isNeedToGrowPool() {
             return freeConnectionsQueue.size() < takenConnections.size() * resizeFactor
                     && freeConnectionsQueue.size() + takenConnections.size() < MAXIMUM_POOL_SIZE;
-        }
-
-        private void addConnections() {
-            try {
-                addConnectionsToPool(RESIZE_QUANTITY);
-            } catch (SQLException | InterruptedException e) {
-                logger.error(e);
-            }
-        }
-
-        private void closeConnections() {
-            for (int i = 0; i < RESIZE_QUANTITY; i++) {
-                try {
-                    Connection connectionToClose = freeConnectionsQueue.take();
-                    connectionToClose.close();
-                } catch (SQLException | InterruptedException e) {
-                    logger.error(e);
-                }
-            }
         }
     }
 }
