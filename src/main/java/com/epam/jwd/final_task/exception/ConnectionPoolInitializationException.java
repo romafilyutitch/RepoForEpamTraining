@@ -1,6 +1,4 @@
-package exception;
-
-import java.sql.SQLException;
+package com.epam.jwd.final_task.exception;
 
 public class ConnectionPoolInitializationException extends Exception {
     public ConnectionPoolInitializationException(String message, Throwable cause) {

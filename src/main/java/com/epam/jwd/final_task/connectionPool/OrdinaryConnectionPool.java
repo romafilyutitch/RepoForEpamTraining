@@ -1,10 +1,10 @@
-package connectionPool.impl;
+package com.epam.jwd.final_task.connectionPool;
 
-import connectionPool.ConnectionPool;
-import connectionPool.ProxyConnection;
-import exception.ConnectionPoolInitializationException;
-import exception.ConnectionsPoolActionException;
-import properties.ConnectionPoolProperties;
+import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
+import com.epam.jwd.final_task.exception.ConnectionsPoolActionException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import com.epam.jwd.final_task.properties.ConnectionPoolProperties;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -20,6 +20,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public enum OrdinaryConnectionPool implements ConnectionPool {
     INSTANCE;
+    private static final Logger logger = LogManager.getLogger(OrdinaryConnectionPool.class);
 
     public static final String POOL_IS_NOT_INITIALIZED_MESSAGE = "Pool is not initialized";
     public static final String COULD_NOT_TAKE_CONNECTION_MESSAGE = "Could not take connection";
@@ -54,7 +55,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             takenConnections.add(connection);
             return connection;
         } catch (InterruptedException e) {
-            System.out.println(e.getMessage());
+            logger.error(e);
             throw new ConnectionsPoolActionException(COULD_NOT_TAKE_CONNECTION_MESSAGE, e);
         }
     }
@@ -70,7 +71,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                 takenConnections.remove(connection);
                 freeConnectionsQueue.put(connection);
             } catch (InterruptedException e) {
-                System.out.println(e.getMessage());
+                logger.error(e);
                 throw new ConnectionsPoolActionException(COULD_NOT_RETURN_CONNECTION_MESSAGE, e);
             }
         } else {
@@ -85,7 +86,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             try {
                 addConnectionsToPool(MINIMUM_POOL_SIZE);
             } catch (SQLException | InterruptedException e) {
-                System.out.print(e.getMessage());
+                logger.error(e);
                 isInitialized.set(false);
                 deregisterDrivers();
                 throw new ConnectionPoolInitializationException(FAILED_TO_OPEN_CONNECTION_MESSAGE, e);
@@ -135,7 +136,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                 ProxyConnection proxyConnection = (ProxyConnection) connection;
                 proxyConnection.getConnection().close();
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.error(e);
             }
         }
     }
@@ -146,7 +147,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                 ProxyConnection proxyConnection = (ProxyConnection) connection;
                 proxyConnection.getConnection().close();
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.error(e);
             }
         }
     }
@@ -155,7 +156,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
         try {
             DriverManager.registerDriver(DriverManager.getDriver(ConnectionPoolProperties.getUrl()));
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.error(e);
             isInitialized.set(false);
             throw new ConnectionPoolInitializationException(DRIVERS_REGISTRATION_FAILED_MESSAGE, e);
         }
@@ -167,32 +168,35 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             try {
                 DriverManager.deregisterDriver(iterator.nextElement());
             } catch (SQLException e) {
-                System.out.println(e.getMessage());
+                logger.error(e);
             }
         }
     }
 
     private class PoolResizeTimerTask extends TimerTask {
+        private final double resizeFactor = ConnectionPoolProperties.getPoolResizeTimerTaskResizeFactor();
+
         @Override
         public void run() {
-            System.out.println("Free connections = " + freeConnectionsQueue.size() + " taken connections = "
-                    + takenConnections.size() + ", total connections = " + (freeConnectionsQueue.size() + takenConnections.size()));
+            logger.info("Free connections = " + freeConnectionsQueue.size() +
+                    ", taken connections = " + takenConnections.size() +
+                    ", total connections amount = " + (freeConnectionsQueue.size() + takenConnections.size()));
             if (isNeedToGrowPool()) {
-                System.out.println("Action is  grow pool");
+                logger.info("Action is grow pool");
                 addConnections();
             } else if (isNeedToTrimPool()) {
-                System.out.println("Result is trim pool");
+                logger.info("Action is trim pool");
                 closeConnections();
             }
         }
 
         private boolean isNeedToTrimPool() {
-            return takenConnections.size() < freeConnectionsQueue.size() * 0.25
+            return takenConnections.size() < freeConnectionsQueue.size() * resizeFactor
                     && freeConnectionsQueue.size() > MINIMUM_POOL_SIZE;
         }
 
         private boolean isNeedToGrowPool() {
-            return freeConnectionsQueue.size() < takenConnections.size() * 0.25
+            return freeConnectionsQueue.size() < takenConnections.size() * resizeFactor
                     && freeConnectionsQueue.size() + takenConnections.size() < MAXIMUM_POOL_SIZE;
         }
 
@@ -200,7 +204,7 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
             try {
                 addConnectionsToPool(RESIZE_QUANTITY);
             } catch (SQLException | InterruptedException e) {
-                System.out.println(e);
+                logger.error(e);
             }
         }
 
@@ -209,8 +213,8 @@ public enum OrdinaryConnectionPool implements ConnectionPool {
                 try {
                     Connection connectionToClose = freeConnectionsQueue.take();
                     connectionToClose.close();
-                } catch (SQLException | InterruptedException ex) {
-                    System.out.println(ex.getMessage());
+                } catch (SQLException | InterruptedException e) {
+                    logger.error(e);
                 }
             }
         }

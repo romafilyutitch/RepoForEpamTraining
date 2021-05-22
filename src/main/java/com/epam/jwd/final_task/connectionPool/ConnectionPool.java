@@ -1,7 +1,6 @@
-package connectionPool;
-import connectionPool.impl.OrdinaryConnectionPool;
-import exception.ConnectionsPoolActionException;
-import exception.ConnectionPoolInitializationException;
+package com.epam.jwd.final_task.connectionPool;
+import com.epam.jwd.final_task.exception.ConnectionsPoolActionException;
+import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
 
 import java.sql.Connection;
 

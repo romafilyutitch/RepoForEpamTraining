@@ -1,7 +1,6 @@
-package properties;
+package com.epam.jwd.final_task.properties;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -49,6 +48,10 @@ public class ConnectionPoolProperties {
 
     public static int getPoolResizeTimerTaskCheckPeriodTime() {
         return Integer.parseInt(connectionPoolProperties.getProperty("poolResizeTimerTask.checkPeriod"));
+    }
+
+    public static double getPoolResizeTimerTaskResizeFactor() {
+        return Double.parseDouble(connectionPoolProperties.getProperty("poolResizeTimerTask.resizeFactor"));
     }
 
 
