@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConnectionPoolProperties {
-    private static final String CONNECTION_POOL_PROPERTIES_PATH = "src"+ File.separator +
+    private static final String CONNECTION_POOL_PROPERTIES_PATH = "src" + File.separator +
             "main" + File.separator +
             "resources" + File.separator +
             "connectionPool.properties";
@@ -47,7 +47,7 @@ public class ConnectionPoolProperties {
         return Integer.parseInt(connectionPoolProperties.getProperty(MINIMAL_POOL_SIZE_KEY));
     }
 
-    public static int getMaximalPoolSizeKey() {
+    public static int getMaximalPoolSize() {
         return Integer.parseInt(connectionPoolProperties.getProperty(MAXIMAL_POOL_SIZE_KEY));
 
     }

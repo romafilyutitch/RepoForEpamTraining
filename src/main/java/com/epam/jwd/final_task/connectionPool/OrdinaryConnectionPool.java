@@ -1,7 +1,6 @@
 package com.epam.jwd.final_task.connectionPool;
 
 import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
-import com.epam.jwd.final_task.exception.ConnectionsPoolActionException;
 import com.epam.jwd.final_task.properties.ConnectionPoolProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,8 +22,6 @@ class OrdinaryConnectionPool implements ConnectionPool {
     private static final Logger logger = LogManager.getLogger(OrdinaryConnectionPool.class);
 
     private static final String POOL_IS_NOT_INITIALIZED_MESSAGE = "Pool is not initialized";
-    private static final String COULD_NOT_TAKE_CONNECTION_MESSAGE = "Could not take connection";
-    private static final String COULD_NOT_RETURN_CONNECTION_MESSAGE = "Could not return connection";
     private static final String CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE = "Connection is not proxy connection";
     private static final String FAILED_TO_INIT_CONNECTION_POOL_MESSAGE = "failed to make connection pool initialization";
     private static final String NEGATIVE_ARGUMENT_MESSAGE = "negative argument";
@@ -36,7 +33,7 @@ class OrdinaryConnectionPool implements ConnectionPool {
     private static final String DATABASE_USERNAME = ConnectionPoolProperties.getUserName();
     private static final String DATABASE_PASSWORD = ConnectionPoolProperties.getPassword();
     private static final int MINIMUM_POOL_SIZE = ConnectionPoolProperties.getMinimalPoolSize();
-    private static final int MAXIMUM_POOL_SIZE = ConnectionPoolProperties.getMaximalPoolSizeKey();
+    private static final int MAXIMUM_POOL_SIZE = ConnectionPoolProperties.getMaximalPoolSize();
     private static final int RESIZE_QUANTITY = ConnectionPoolProperties.getResizeQuantity();
     private static final int POOL_RESIZE_CHECK_DELAY_TIME = ConnectionPoolProperties.getPoolResizeTimerTaskCheckDelayTime();
     private static final int POOL_RESIZE_CHECK_PERIOD_TIME = ConnectionPoolProperties.getPoolResizeTimerTaskCheckPeriodTime();
@@ -55,35 +52,31 @@ class OrdinaryConnectionPool implements ConnectionPool {
     }
 
     @Override
-    public Connection takeFreeConnection() throws ConnectionsPoolActionException {
+    public Connection takeFreeConnection() {
         if (!isInitialized.get()) {
             throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
         }
+        Connection freeConnection = null;
         try {
-            final Connection connection = freeConnectionsQueue.take();
-            takenConnections.add(connection);
-            return connection;
+            freeConnection = freeConnectionsQueue.take();
+            takenConnections.add(freeConnection);
         } catch (InterruptedException e) {
             logger.error(e);
-            throw new ConnectionsPoolActionException(COULD_NOT_TAKE_CONNECTION_MESSAGE, e);
         }
+        return freeConnection;
     }
 
     @Override
-    public void returnTakenConnection(Connection connection) throws ConnectionsPoolActionException {
+    public void returnTakenConnection(Connection connection) {
         if (!isInitialized.get()) {
             throw new IllegalStateException(POOL_IS_NOT_INITIALIZED_MESSAGE);
         }
         checkReturnedConnection(connection);
-        if (connection instanceof ProxyConnection) {
-            try {
-                takenConnections.remove(connection);
-                freeConnectionsQueue.put(connection);
-            } catch (InterruptedException e) {
-                logger.error(e);
-            }
-        } else {
-            throw new IllegalArgumentException(CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE);
+        try {
+            freeConnectionsQueue.put(connection);
+            takenConnections.remove(connection);
+        } catch (InterruptedException e) {
+            logger.error(e);
         }
     }
 
@@ -140,8 +133,12 @@ class OrdinaryConnectionPool implements ConnectionPool {
         if (connection == null) {
             throw new NullPointerException(CONNECTION_IS_NULL_MESSAGE);
         }
-        if (!takenConnections.contains(connection)) {
-            throw new IllegalArgumentException(RETURNED_CONNECTION_IS_NOT_TAKEN_CONNECTION_MESSAGE);
+        if (connection instanceof ProxyConnection) {
+            if (!takenConnections.contains(connection)) {
+                throw new IllegalArgumentException(RETURNED_CONNECTION_IS_NOT_TAKEN_CONNECTION_MESSAGE);
+            }
+        } else {
+            throw new IllegalArgumentException(CONNECTION_IS_NOT_PROXY_CONNECTION_MESSAGE);
         }
     }
 
