@@ -7,29 +7,30 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConnectionPoolProperties {
+    private static final Properties connectionPoolProperties = new Properties();
     private static final String CONNECTION_POOL_PROPERTIES_PATH = "src" + File.separator +
             "main" + File.separator +
             "resources" + File.separator +
             "connectionPool.properties";
-    private static final Properties connectionPoolProperties;
-    public static final String URL_KEY = "url";
-    public static final String USER_KEY = "user";
-    public static final String PASSWORD_KEY = "password";
-    public static final String MINIMAL_POOL_SIZE_KEY = "minimalPoolSize";
-    public static final String MAXIMAL_POOL_SIZE_KEY = "maximalPoolSize";
-    public static final String RESIZE_QUANTITY_KEY = "resizeQuantity";
-    public static final String POOL_RESIZE_TIMER_TASK_CHECK_DELAY_KEY = "poolResizeTimerTask.checkDelay";
-    public static final String POOL_RESIZE_TIMER_TASK_CHECK_PERIOD_KEY = "poolResizeTimerTask.checkPeriod";
-    public static final String POOL_RESIZE_TIMER_TASK_RESIZE_FACTOR_KEY = "poolResizeTimerTask.resizeFactor";
+    private static final String URL_KEY = "url";
+    private static final String USER_KEY = "user";
+    private static final String PASSWORD_KEY = "password";
+    private static final String MINIMAL_POOL_SIZE_KEY = "minimalPoolSize";
+    private static final String MAXIMAL_POOL_SIZE_KEY = "maximalPoolSize";
+    private static final String RESIZE_QUANTITY_KEY = "resizeQuantity";
+    private static final String POOL_RESIZE_TIMER_TASK_CHECK_DELAY_KEY = "poolResizeTimerTask.checkDelay";
+    private static final String POOL_RESIZE_TIMER_TASK_CHECK_PERIOD_KEY = "poolResizeTimerTask.checkPeriod";
+    private static final String POOL_RESIZE_TIMER_TASK_RESIZE_FACTOR_KEY = "poolResizeTimerTask.resizeFactor";
 
     static {
-        connectionPoolProperties = new Properties();
         try {
             connectionPoolProperties.load(new BufferedReader(new FileReader(CONNECTION_POOL_PROPERTIES_PATH)));
         } catch (IOException e) {
             throw new RuntimeException("Cannot get connection pool properties file", e);
         }
     }
+
+    private ConnectionPoolProperties() {}
 
     public static String getUrl() {
         return connectionPoolProperties.getProperty(URL_KEY);
@@ -67,6 +68,5 @@ public class ConnectionPoolProperties {
     public static double getPoolResizeTimerTaskResizeFactor() {
         return Double.parseDouble(connectionPoolProperties.getProperty(POOL_RESIZE_TIMER_TASK_RESIZE_FACTOR_KEY));
     }
-
 
 }
