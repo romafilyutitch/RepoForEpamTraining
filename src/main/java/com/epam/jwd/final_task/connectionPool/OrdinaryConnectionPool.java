@@ -120,9 +120,6 @@ class OrdinaryConnectionPool implements ConnectionPool {
     }
 
     private void removeFreeConnectionsFromPool() throws SQLException, InterruptedException {
-        if (OrdinaryConnectionPool.RESIZE_QUANTITY < 0) {
-            throw new IllegalStateException(NEGATIVE_ARGUMENT_MESSAGE);
-        }
         for (int i = 0; i < RESIZE_QUANTITY; i++) {
             ProxyConnection proxyConnection = (ProxyConnection) freeConnectionsQueue.take();
             proxyConnection.getConnection().close();
