@@ -6,15 +6,15 @@ import java.sql.Connection;
 
 public interface ConnectionPool {
 
-    Connection takeConnection() throws ConnectionsPoolActionException;
+    Connection takeFreeConnection() throws ConnectionsPoolActionException;
 
-    void returnConnection(Connection connection) throws ConnectionsPoolActionException;
+    void returnTakenConnection(Connection connection) throws ConnectionsPoolActionException;
 
     void init() throws ConnectionPoolInitializationException;
 
     void destroy();
 
     static ConnectionPool getConnectionPool() {
-        return OrdinaryConnectionPool.INSTANCE;
+        return OrdinaryConnectionPool.getInstance();
     }
 }
