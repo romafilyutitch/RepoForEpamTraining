@@ -1,6 +1,7 @@
 package com.epam.jwd.final_task.dao;
 
 import com.epam.jwd.final_task.connectionPool.ConnectionPool;
+import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.Subscription;
 
 import java.sql.Connection;
@@ -9,90 +10,87 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
 public class SubscriptionDaoService implements Dao<Subscription> {
-    private static final String TABLE_NAME = "reader_subscription";
-    private static final String ID_COLUMN = "id";
-    private static final String START_DATE_COLUMN = "start_date";
-    private static final String END_DATE_COLUMN = "end_date";
-    private static final String GENERATED_KEY_COLUMN = "GENERATED_KEY";
-    private static final String SAVE_PREPARED_SQL ="INSERT INTO ? (?, ?) VALUES(?,?)";
-    private static final String FIND_ALL_SQL = "SELECT ?, ?, ? FROM ?";
-    private static final String UPDATE_PREPARED_SQL = "UPDATE ? SET ? = ?, ? = ? WHERE ? = ?";
+
+    private static final String SAVE_PREPARED_SQL = "insert into reader_subscription (start_date, end_date) values (?, ?)";
+    private static final String FIND_ALL_SQL = "select id, start_date, end_date from reader_subscription";
+    private static final String UPDATE_PREPARED_SQL = "update reader_subscription set start_date = ?, end_date = ? where id = ?";
+    private static final String DELETE_PREPARED_SQL = "delete from reader_subscription where id = ?";
+    public static final String GENERATED_KEY_COLUMN = "GENERATED_KEY";
+    public static final String ID_COLUMN = "id";
+    public static final String START_DATE_COLUMN = "start_date";
+    public static final String END_DATE_COLUMN = "end_date";
 
     @Override
-    public Subscription save(Subscription entity) {
+    public Subscription save(Subscription entity) throws DAOException {
+        Optional<Subscription> optionalSubscription = findAll().stream().filter(subscription -> subscription.getStartDate().equals(entity.getStartDate()) && subscription.getEndDate().equals(entity.getEndDate())).findAny();
+        if (optionalSubscription.isPresent()) {
+            return optionalSubscription.get();
+        }
         try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
              PreparedStatement saveStatement = connection.prepareStatement(SAVE_PREPARED_SQL, Statement.RETURN_GENERATED_KEYS)) {
-            saveStatement.setString(1, TABLE_NAME);
-            saveStatement.setString(2, START_DATE_COLUMN);
-            saveStatement.setString(3, END_DATE_COLUMN);
-            saveStatement.setDate(4, Date.valueOf(entity.getStartDate()));
-            saveStatement.setDate(5, Date.valueOf(entity.getEndDate()));
+            saveStatement.setDate(1, Date.valueOf(entity.getStartDate()));
+            saveStatement.setDate(2, Date.valueOf(entity.getEndDate()));
+            saveStatement.executeUpdate();
             ResultSet resultSet = saveStatement.getGeneratedKeys();
             resultSet.next();
             Long id = resultSet.getLong(GENERATED_KEY_COLUMN);
-            Subscription subscription = new Subscription(id, entity.getStartDate(), entity.getEndDate());
-            return subscription;
+            return new Subscription(id, entity.getStartDate(), entity.getEndDate());
         } catch (SQLException e) {
-            System.out.println("Save subscription failed");
-            return entity;
+            throw new DAOException(e);
         }
     }
 
     @Override
-    public List<Subscription> findAll() {
+    public List<Subscription> findAll() throws DAOException {
         List<Subscription> subscriptions = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
-        PreparedStatement findAllStatement = connection.prepareStatement(FIND_ALL_SQL)) {
-            findAllStatement.setString(1, ID_COLUMN);
-            findAllStatement.setString(2, START_DATE_COLUMN);
-            findAllStatement.setString(3, END_DATE_COLUMN);
-            try (ResultSet resultSet = findAllStatement.executeQuery()) {
-                while (resultSet.next()) {
-                    Subscription subscription = new Subscription(resultSet.getLong(ID_COLUMN),
-                            resultSet.getDate(START_DATE_COLUMN).toLocalDate(),
-                            resultSet.getDate(END_DATE_COLUMN).toLocalDate());
-                    subscriptions.add(subscription);
-                }
-                return subscriptions;
+             Statement findAllStatement = connection.createStatement();
+             ResultSet resultSet = findAllStatement.executeQuery(FIND_ALL_SQL)) {
+            while (resultSet.next()) {
+                Subscription subscription = new Subscription(resultSet.getLong(ID_COLUMN),
+                        resultSet.getDate(START_DATE_COLUMN).toLocalDate(),
+                        resultSet.getDate(END_DATE_COLUMN).toLocalDate());
+                subscriptions.add(subscription);
             }
         } catch (SQLException e) {
-            System.out.println("Subscription find failed");
-            return Collections.emptyList();
+            throw new DAOException(e);
         }
+        return subscriptions;
     }
 
     @Override
-    public Optional<Subscription> findById(Long id) {
+    public Optional<Subscription> findById(Long id) throws DAOException {
         return findAll().stream().filter(subscription -> subscription.getId().equals(id)).findAny();
     }
 
     @Override
-    public Subscription update(Subscription entity) {
+    public Subscription update(Subscription entity) throws DAOException {
         try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
-        PreparedStatement updateStatement = connection.prepareStatement(UPDATE_PREPARED_SQL)) {
-            updateStatement.setString(1, TABLE_NAME);
-            updateStatement.setString(2, START_DATE_COLUMN);
-            updateStatement.setDate(3, Date.valueOf(entity.getStartDate()));
-            updateStatement.setString(4, END_DATE_COLUMN);
-            updateStatement.setDate(5, Date.valueOf(entity.getEndDate()));
-            updateStatement.setString(6, ID_COLUMN);
-            updateStatement.setLong(7, entity.getId());
+             PreparedStatement updateStatement = connection.prepareStatement(UPDATE_PREPARED_SQL)) {
+            updateStatement.setDate(1, Date.valueOf(entity.getStartDate()));
+            updateStatement.setDate(2, Date.valueOf(entity.getEndDate()));
+            updateStatement.setString(3, ID_COLUMN);
+            updateStatement.setLong(4, entity.getId());
             updateStatement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println("update subscription is failed");
+            throw new DAOException(e);
         }
         return entity;
     }
 
     @Override
-    public void delete(Long id) {
-
+    public void delete(Long id) throws DAOException {
+        try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
+             PreparedStatement deleteStatement = connection.prepareStatement(DELETE_PREPARED_SQL)) {
+            deleteStatement.setLong(1, id);
+            deleteStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
     }
 }

@@ -1,16 +1,16 @@
 package com.epam.jwd.final_task.dao;
 
+import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.Book;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface BookDao extends Dao<Book> {
-    Optional<Book> findBookByName(String name);
+    List<Book> findBooksByName(String name) throws DAOException;
 
-    List<Book> findBooksByAuthor(String author);
+    List<Book> findBooksByAuthor(String author) throws DAOException;
 
-    List<Book> findBooksByGenre(String genre);
+    List<Book> findBooksByGenre(String genre) throws DAOException;
 
-    List<Book> findBooksByYear(int year);
+    List<Book> findBooksByYear(int year) throws DAOException;
 }

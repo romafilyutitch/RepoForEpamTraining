@@ -1,2 +1,5 @@
-package com.epam.jwd.final_task.mode;public interface DbEntity {
+package com.epam.jwd.final_task.model;
+
+public interface DbEntity {
+    Long getId();
 }
