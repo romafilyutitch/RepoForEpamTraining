@@ -8,9 +8,9 @@ import java.util.List;
 public interface BookDao extends Dao<Book> {
     List<Book> findBooksByName(String name) throws DAOException;
 
-    List<Book> findBooksByAuthor(String author) throws DAOException;
+    List<Book> findBooksByAuthorName(String authorName) throws DAOException;
 
-    List<Book> findBooksByGenre(String genre) throws DAOException;
+    List<Book> findBooksByGenreName(String genreName) throws DAOException;
 
     List<Book> findBooksByYear(int year) throws DAOException;
 }

@@ -3,11 +3,10 @@ package com.epam.jwd.final_task.model;
 import java.util.Objects;
 
 public class BookGenre implements DbEntity {
-    private final Long id;
+    private  Long id;
     private final String name;
 
-    public BookGenre(Long id, String name) {
-        this.id = id;
+    public BookGenre(String name) {
         this.name = name;
     }
 
@@ -18,6 +17,14 @@ public class BookGenre implements DbEntity {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void setId(Long id) {
+        if (this.getId() != null) {
+            throw new IllegalStateException("id already assigned");
+        }
+        this.id = id;
     }
 
     @Override

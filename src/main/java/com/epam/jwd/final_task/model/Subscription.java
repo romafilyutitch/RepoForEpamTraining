@@ -4,12 +4,11 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Subscription implements DbEntity {
-    private final Long id;
+    private Long id;
     private final LocalDate startDate;
     private final LocalDate endDate;
 
-    public Subscription(Long id, LocalDate startDate, LocalDate endDate) {
-        this.id = id;
+    public Subscription(LocalDate startDate, LocalDate endDate) {
         this.startDate = startDate;
         this.endDate = endDate;
     }
@@ -25,6 +24,32 @@ public class Subscription implements DbEntity {
 
     public LocalDate getEndDate() {
         return endDate;
+    }
+
+    @Override
+    public void setId(Long id) {
+        if (this.getId() != null) {
+            throw new IllegalStateException("id already assigned");
+        }
+        this.id = id;
+    }
+
+    public Subscription updateStartDate(LocalDate newStartDate) {
+        if (newStartDate == null) {
+            throw new NullPointerException();
+        }
+        final Subscription newSubscription = new Subscription(newStartDate, endDate);
+        newSubscription.setId(id);
+        return newSubscription;
+    }
+
+    public Subscription updateEndDate(LocalDate newEndDate) {
+        if (newEndDate == null) {
+            throw new NullPointerException();
+        }
+        final Subscription newSubscription = new Subscription(startDate, newEndDate);
+        newSubscription.setId(id);
+        return newSubscription;
     }
 
     @Override

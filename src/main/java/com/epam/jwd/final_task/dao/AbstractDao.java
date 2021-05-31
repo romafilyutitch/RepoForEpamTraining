@@ -1,51 +1,142 @@
 package com.epam.jwd.final_task.dao;
 
+import com.epam.jwd.final_task.connectionPool.ConnectionPool;
 import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.DbEntity;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
+    private static final String GENERATED_KEY_COLUMN = "GENERATED_KEY";
+    public static final String SAVE_OPERATION_UNSUPPORTED_MESSAGE = "Save entity operation is unsupported for this service";
+    public static final String FIND_OPERATION_UNSUPPORTED_MESSAGE = "Find entities operation is unsupported for this service";
+    public static final String UPDATE_OPERATION_UNSUPPORTED_MESSAGE = "Update entity operation is unsupported for this service";
+    public static final String DELETE_OPERATION_UNSUPPORTED_MESSAGE = "Delete entity operation is unsupported for this service";
+    private final String deleteSql;
+    private final String findAllSql;
+    private final String saveSql;
+    private final String updateSql;
 
-    private final String tableName;
-    private final String findAllSql = String.format("select %s from %s", ,tableName);
-    private final String saveSql = String.format("insert into %s (%s) values (%s) ", tableName);
-    private final String updateSql  = String.format("update %s set %s where %s", tableName);
-    private final String deleteSql = String.format("delete from %s, where %s", tableName);
-
-    public AbstractDao(String tableName) {
-        this.tableName = tableName;
+    public AbstractDao(String findAllSql, String saveSql, String updateSql, String deleteSql) {
+        this.findAllSql = findAllSql;
+        this.saveSql = saveSql;
+        this.updateSql = updateSql;
+        this.deleteSql = deleteSql;
     }
+
+    public AbstractDao(String findAllSql, String saveSql, String updateSql) {
+        this(findAllSql, saveSql, updateSql, null);
+    }
+
+    public AbstractDao(String findAllSql, String saveSql) {
+        this(findAllSql, saveSql, null, null);
+    }
+
+    public AbstractDao(String findAllSql) {
+        this(findAllSql, null, null, null);
+    }
+
+    public AbstractDao() {
+        this(null, null, null, null);
+    }
+
 
     @Override
     public T save(T entity) throws DAOException {
-        return null;
+        if (saveSql == null) {
+            throw new UnsupportedOperationException(SAVE_OPERATION_UNSUPPORTED_MESSAGE);
+        }
+        Optional<T> savedEntity = findSaved(entity);
+        if (savedEntity.isPresent()) {
+            return savedEntity.get();
+        }
+        try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
+             PreparedStatement saveStatement = connection.prepareStatement(saveSql, Statement.RETURN_GENERATED_KEYS)) {
+            setSavePrepareStatementValues(entity, saveStatement);
+            saveStatement.executeUpdate();
+            ResultSet generatedKeyResultSet = saveStatement.getGeneratedKeys();
+            generatedKeyResultSet.next();
+            Long id = generatedKeyResultSet.getLong(GENERATED_KEY_COLUMN);
+            entity.setId(id);
+            return entity;
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
     }
 
     @Override
     public List<T> findAll() throws DAOException {
-        return null;
+        if (findAllSql == null) {
+            throw new UnsupportedOperationException(FIND_OPERATION_UNSUPPORTED_MESSAGE);
+        }
+        return findEntities(findAllSql);
     }
 
     @Override
     public Optional<T> findById(Long id) throws DAOException {
-        return Optional.empty();
+        return findAll().stream().filter(entity -> entity.getId().equals(id)).findAny();
     }
 
     @Override
     public T update(T entity) throws DAOException {
-        return null;
+        if (updateSql == null) {
+            throw new UnsupportedOperationException(UPDATE_OPERATION_UNSUPPORTED_MESSAGE);
+        }
+        try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
+             PreparedStatement updateStatement = connection.prepareStatement(updateSql)) {
+            setUpdatePreparedStatementValues(entity, updateStatement);
+            updateStatement.executeUpdate();
+            return entity;
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
     }
 
     @Override
     public void delete(Long id) throws DAOException {
-
+        if (deleteSql == null) {
+            throw new UnsupportedOperationException(DELETE_OPERATION_UNSUPPORTED_MESSAGE);
+        }
+        try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
+             PreparedStatement deleteStatement = connection.prepareStatement(deleteSql)) {
+            deleteStatement.setLong(1, id);
+            deleteStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
     }
 
-    public abstract T getMapperFunction(ResultSet result);
+    protected List<T> findEntities(String sql) throws DAOException {
+        try (final Connection conn = ConnectionPool.getConnectionPool().takeFreeConnection();
+             final Statement statement = conn.createStatement()) {
+            try (final ResultSet resultSet = statement.executeQuery(sql)) {
+                List<T> entities = new ArrayList<>();
+                while (resultSet.next()) {
+                    final T entity = mapResultSet(resultSet);
+                    entities.add(entity);
+                }
+                return entities;
+            }
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
 
-    public abstract void applyStatement(PreparedStatement statement);
+    protected Optional<T> findSaved(T entity) throws DAOException {
+        return findById(entity.getId());
+    }
+
+    protected abstract T mapResultSet(ResultSet result) throws SQLException, DAOException;
+
+    protected abstract void setSavePrepareStatementValues(T entity, PreparedStatement savePreparedStatement) throws SQLException, DAOException;
+
+    protected abstract void setUpdatePreparedStatementValues(T entity, PreparedStatement updatePreparedStatement) throws SQLException, DAOException;
+
 }

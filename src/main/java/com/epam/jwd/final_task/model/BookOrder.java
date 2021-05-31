@@ -4,13 +4,12 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class BookOrder implements DbEntity {
-    private final Long id;
+    private  Long id;
     private final LibraryUser user;
     private final Book book;
     private final LocalDate orderDate;
 
-    public BookOrder(Long id, LibraryUser user, Book book, LocalDate orderDate) {
-        this.id = id;
+    public BookOrder(LibraryUser user, Book book, LocalDate orderDate) {
         this.user = user;
         this.book = book;
         this.orderDate = orderDate;
@@ -31,6 +30,14 @@ public class BookOrder implements DbEntity {
 
     public LocalDate getOrderDate() {
         return orderDate;
+    }
+
+    @Override
+    public void setId(Long id) {
+        if (this.getId() != null) {
+            throw new IllegalStateException("id already assigned");
+        }
+        this.id = id;
     }
 
     @Override

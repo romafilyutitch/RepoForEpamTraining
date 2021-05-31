@@ -19,6 +19,11 @@ public enum UserRole implements DbEntity {
         return name;
     }
 
+    @Override
+    public void setId(Long id) {
+        throw new UnsupportedOperationException("Cannot change enum element id");
+    }
+
     public static UserRole getRoleById(Long id) {
         for (UserRole userRole : values()) {
             if (userRole.getId().equals(id)) {
