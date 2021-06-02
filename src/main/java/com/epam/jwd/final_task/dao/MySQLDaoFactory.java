@@ -1,18 +1,49 @@
 package com.epam.jwd.final_task.dao;
 
 public class MySQLDaoFactory implements DaoFactory {
+    private MySQLDaoFactory() {
+    }
+
+    public static MySQLDaoFactory getInstance() {
+        return Singleton.INSTANCE;
+    }
+
     @Override
     public UserDao getUserDao() {
-        return new UserDaoService();
+        return MySQLUserDao.getInstance();
     }
 
     @Override
     public BookDao getBookDao() {
-        return new BookDaoService();
+        return MySQLBookDao.getInstance();
     }
 
     @Override
     public OrderDao getOrderDao() {
-        return new OrderDaoService();
+        return MySQLOrderDao.getInstance();
+    }
+
+    @Override
+    public AuthorDao getAuthorDao() {
+        return MySQLAuthorDao.getInstance();
+    }
+
+    @Override
+    public GenreDao getGenreDao() {
+        return MySQLGenreDao.getInstance();
+    }
+
+    @Override
+    public RoleDao getRoleDao() {
+        return MySQLRoleDao.getInstance();
+    }
+
+    @Override
+    public SubscriptionDao getSubscriptionDao() {
+        return MySQLSubscriptionDao.getInstance();
+    }
+
+    private static class Singleton {
+        private static final MySQLDaoFactory INSTANCE = new MySQLDaoFactory();
     }
 }

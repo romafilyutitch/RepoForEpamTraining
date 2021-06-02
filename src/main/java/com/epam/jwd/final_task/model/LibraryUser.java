@@ -3,13 +3,14 @@ package com.epam.jwd.final_task.model;
 import java.util.Objects;
 
 public class LibraryUser implements DbEntity {
-    private Long id;
+    private final Long id;
     private final String login;
     private final String password;
     private final UserRole role;
     private final Subscription userSubscription;
 
-    public LibraryUser(String login, String password, UserRole role, Subscription subscription) {
+    public LibraryUser(Long id, String login, String password, UserRole role, Subscription subscription) {
+        this.id = id;
         this.login = login;
         this.password = password;
         this.role = role;
@@ -17,13 +18,12 @@ public class LibraryUser implements DbEntity {
     }
 
     public LibraryUser(String login, String password) {
-        this(login, password, UserRole.READER, null);
+        this(null, login, password, UserRole.READER, null);
     }
 
     public LibraryUser(String login, String password, UserRole role) {
-        this(login, password, role, null);
+        this(null, login, password, role, null);
     }
-
 
     @Override
     public Long getId() {
@@ -52,46 +52,30 @@ public class LibraryUser implements DbEntity {
 
     public LibraryUser updateLogin(String newLogin) {
         if (newLogin == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final LibraryUser updatedUser = new LibraryUser(newLogin, password, role, userSubscription);
-        updatedUser.setId(id);
-        return updatedUser;
+        return new LibraryUser(id, newLogin, password, role, userSubscription);
     }
 
     public LibraryUser updatePassword(String newPassword) {
         if (newPassword == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final LibraryUser updatedUser = new LibraryUser(login, newPassword, role, userSubscription);
-        updatedUser.setId(id);
-        return updatedUser;
+        return new LibraryUser(id, login, newPassword, role, userSubscription);
     }
 
     public LibraryUser updateRole(UserRole newRole) {
         if (newRole == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final LibraryUser updatedUser = new LibraryUser(login, password, newRole, userSubscription);
-        updatedUser.setId(id);
-        return updatedUser;
+        return new LibraryUser(id, login, password, newRole, userSubscription);
     }
 
     public LibraryUser updateSubscription(Subscription newSubscription) {
         if (newSubscription == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final LibraryUser updatedUser = new LibraryUser(login, password, role, newSubscription);
-        updatedUser.setId(id);
-        return updatedUser;
-    }
-
-    @Override
-    public void setId(Long id) {
-        if (this.getId() != null) {
-            throw new IllegalStateException("id already assigned");
-        }
-        this.id = id;
+        return new LibraryUser(id, login, password, role, newSubscription);
     }
 
     @Override

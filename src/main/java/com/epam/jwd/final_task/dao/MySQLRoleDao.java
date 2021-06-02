@@ -1,17 +1,23 @@
 package com.epam.jwd.final_task.dao;
 
+import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.UserRole;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Optional;
 
-public class UserRoleDaoService extends AbstractDao<UserRole> {
+public class MySQLRoleDao extends AbstractDao<UserRole> implements RoleDao {
     private static final String FIND_ALL_SQL = "select id, role from user_role";
     public static final String ROLE_COLUMN = "role";
 
-    public UserRoleDaoService() {
+    private MySQLRoleDao() {
         super(FIND_ALL_SQL);
+    }
+
+    public static MySQLRoleDao getInstance() {
+        return Singleton.INSTANCE;
     }
 
     @Override
@@ -27,5 +33,19 @@ public class UserRoleDaoService extends AbstractDao<UserRole> {
     @Override
     protected void setUpdatePreparedStatementValues(UserRole entity, PreparedStatement updatePreparedStatement) {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    protected UserRole assignIdToSavedEntity(Long id, UserRole entity) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Optional<UserRole> findByName(String userRoleName) throws DAOException {
+        return findAll().stream().filter(role -> role.getRoleName().equals(userRoleName)).findAny();
+    }
+
+    private static class Singleton {
+        private static final MySQLRoleDao INSTANCE = new MySQLRoleDao();
     }
 }

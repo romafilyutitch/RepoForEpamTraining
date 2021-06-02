@@ -1,13 +1,17 @@
 package com.epam.jwd.final_task.dao;
 
+import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.Subscription;
 
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class SubscriptionDaoService extends AbstractDao<Subscription> {
+public class MySQLSubscriptionDao extends AbstractDao<Subscription> implements SubscriptionDao {
 
     private static final String SAVE_PREPARED_SQL = "insert into reader_subscription (start_date, end_date) values (?, ?)";
     private static final String FIND_ALL_SQL = "select id, start_date, end_date from reader_subscription";
@@ -17,15 +21,17 @@ public class SubscriptionDaoService extends AbstractDao<Subscription> {
     public static final String START_DATE_COLUMN = "start_date";
     public static final String END_DATE_COLUMN = "end_date";
 
-    public SubscriptionDaoService() {
+    private MySQLSubscriptionDao() {
        super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL, DELETE_PREPARED_SQL);
+    }
+
+    public static MySQLSubscriptionDao getInstance() {
+        return Singleton.INSTANCE;
     }
 
     @Override
     protected Subscription mapResultSet(ResultSet result) throws SQLException {
-        final Subscription subscriptionFromResultSet = new Subscription(result.getDate(START_DATE_COLUMN).toLocalDate(), result.getDate(END_DATE_COLUMN).toLocalDate());
-        subscriptionFromResultSet.setId(result.getLong(ID_COLUMN));
-        return subscriptionFromResultSet;
+        return new Subscription(result.getLong(ID_COLUMN), result.getDate(START_DATE_COLUMN).toLocalDate(), result.getDate(END_DATE_COLUMN).toLocalDate());
     }
 
     @Override
@@ -39,5 +45,29 @@ public class SubscriptionDaoService extends AbstractDao<Subscription> {
         updatePreparedStatement.setDate(1, Date.valueOf(entity.getStartDate()));
         updatePreparedStatement.setDate(2, Date.valueOf(entity.getEndDate()));
         updatePreparedStatement.setLong(3, entity.getId());
+    }
+
+    @Override
+    protected Subscription assignIdToSavedEntity(Long id, Subscription entity) {
+        return new Subscription(id, entity.getStartDate(), entity.getEndDate());
+    }
+
+    @Override
+    public List<Subscription> findByStartDate(LocalDate startDate) throws DAOException {
+        return findAll().stream().filter(subscription -> subscription.getStartDate().equals(startDate)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Subscription> findByEndDate(LocalDate endDate) throws DAOException {
+        return findAll().stream().filter(subscription -> subscription.getEndDate().equals(endDate)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Subscription> findBetween(LocalDate startDate, LocalDate endDate) throws DAOException {
+        return findAll().stream().filter(subscription -> subscription.getStartDate().isAfter(startDate) && subscription.getEndDate().isBefore(endDate)).collect(Collectors.toList());
+    }
+
+    private static class Singleton {
+        private static final MySQLSubscriptionDao INSTANCE = new MySQLSubscriptionDao();
     }
 }

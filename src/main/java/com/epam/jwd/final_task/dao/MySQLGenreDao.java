@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-public class BookGenreDao extends AbstractDao<BookGenre> {
+public class MySQLGenreDao extends AbstractDao<BookGenre> implements GenreDao {
     private static final String SAVE_PREPARED_SQL = "insert into book_genre (name) values (?)";
     private static final String FIND_ALL_SQL = "select id, name from book_genre";
     private static final String UPDATE_PREPARED_SQL = "update book_genre set name = ? where id = ?";
@@ -17,15 +17,17 @@ public class BookGenreDao extends AbstractDao<BookGenre> {
     public static final String NAME_COLUMN = "name";
 
 
-    public BookGenreDao() {
-        super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL, DELETE_PREPARED_SQL);
+    private MySQLGenreDao() {
+        super(FIND_ALL_SQL, SAVE_PREPARED_SQL);
+    }
+
+    public static MySQLGenreDao getInstance() {
+        return Singleton.INSTANCE;
     }
 
     @Override
     protected BookGenre mapResultSet(ResultSet result) throws SQLException {
-        final BookGenre bookGenreFromTable = new BookGenre(result.getString(NAME_COLUMN));
-        bookGenreFromTable.setId(result.getLong(ID_COLUMN));
-        return bookGenreFromTable;
+        return new BookGenre(result.getLong(ID_COLUMN), result.getString(NAME_COLUMN));
     }
 
     @Override
@@ -40,7 +42,17 @@ public class BookGenreDao extends AbstractDao<BookGenre> {
     }
 
     @Override
-    public Optional<BookGenre> findSaved(BookGenre genre) throws DAOException {
-        return findAll().stream().filter(genreFromTable -> genreFromTable.getName().equalsIgnoreCase(genre.getName())).findAny();
+    protected BookGenre assignIdToSavedEntity(Long id, BookGenre entity) {
+        return new BookGenre(id, entity.getName());
+    }
+
+
+    @Override
+    public Optional<BookGenre> getByName(String genreName) throws DAOException {
+        return findAll().stream().filter(genre -> genre.getName().equals(genreName)).findAny();
+    }
+
+    private static class Singleton {
+        private static final MySQLGenreDao INSTANCE = new MySQLGenreDao();
     }
 }

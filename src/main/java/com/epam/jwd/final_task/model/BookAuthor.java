@@ -3,11 +3,16 @@ package com.epam.jwd.final_task.model;
 import java.util.Objects;
 
 public class BookAuthor implements DbEntity {
-    private Long id;
+    private final Long id;
     private final String name;
 
-    public BookAuthor(String name) {
+    public BookAuthor(Long id, String name) {
+        this.id = id;
         this.name = name;
+    }
+
+    public BookAuthor(String name) {
+        this(null, name);
     }
 
     @Override
@@ -19,21 +24,12 @@ public class BookAuthor implements DbEntity {
         return name;
     }
 
-    @Override
-    public void setId(Long id) {
-        if (this.getId() != null) {
-            throw new IllegalStateException("id already assigned");
-        }
-        this.id = id;
-    }
 
-    public BookAuthor updateName(String name) {
-        if (name == null) {
-            throw new NullPointerException();
+    public BookAuthor updateName(String newName) {
+        if (newName == null) {
+            return this;
         }
-        final BookAuthor newBookAuthor = new BookAuthor(name);
-        newBookAuthor.setId(id);
-        return newBookAuthor;
+        return new BookAuthor(id, newName);
     }
 
 

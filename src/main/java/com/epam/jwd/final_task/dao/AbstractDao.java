@@ -53,10 +53,6 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
         if (saveSql == null) {
             throw new UnsupportedOperationException(SAVE_OPERATION_UNSUPPORTED_MESSAGE);
         }
-        Optional<T> savedEntity = findSaved(entity);
-        if (savedEntity.isPresent()) {
-            return savedEntity.get();
-        }
         try (Connection connection = ConnectionPool.getConnectionPool().takeFreeConnection();
              PreparedStatement saveStatement = connection.prepareStatement(saveSql, Statement.RETURN_GENERATED_KEYS)) {
             setSavePrepareStatementValues(entity, saveStatement);
@@ -64,8 +60,7 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
             ResultSet generatedKeyResultSet = saveStatement.getGeneratedKeys();
             generatedKeyResultSet.next();
             Long id = generatedKeyResultSet.getLong(GENERATED_KEY_COLUMN);
-            entity.setId(id);
-            return entity;
+            return assignIdToSavedEntity(id, entity);
         } catch (SQLException e) {
             throw new DAOException(e);
         }
@@ -129,14 +124,11 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
         }
     }
 
-    protected Optional<T> findSaved(T entity) throws DAOException {
-        return findById(entity.getId());
-    }
-
     protected abstract T mapResultSet(ResultSet result) throws SQLException, DAOException;
 
     protected abstract void setSavePrepareStatementValues(T entity, PreparedStatement savePreparedStatement) throws SQLException, DAOException;
 
     protected abstract void setUpdatePreparedStatementValues(T entity, PreparedStatement updatePreparedStatement) throws SQLException, DAOException;
 
+    protected abstract T assignIdToSavedEntity(Long id, T entity);
 }

@@ -14,9 +14,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class OrderDaoService extends AbstractDao<BookOrder> implements OrderDao {
-    private final BookDaoService bookDaoService = new BookDaoService();
-    private final UserDaoService userDaoService = new UserDaoService();
+public class MySQLOrderDao extends AbstractDao<BookOrder> implements OrderDao {
+    private static final BookDao BOOK_DAO_SERVICE = DaoFactory.getInstance().getBookDao();
+    private static final UserDao USER_DAO_SERVICE = DaoFactory.getInstance().getUserDao();
 
     private static final String ID_COLUMN = "id";
     private static final String READER_COLUMN = "reader";
@@ -27,24 +27,26 @@ public class OrderDaoService extends AbstractDao<BookOrder> implements OrderDao 
     private static final String UPDATE_PREPARED_SQL = "update book_order set reader = ?, book = ?, order_date = ? where id = ?";
     private static final String DELETE_PREPARED_SQL = "delete from book_order where id = ?";
 
-    public OrderDaoService() {
+    private MySQLOrderDao() {
         super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL, DELETE_PREPARED_SQL);
+    }
+
+    public static MySQLOrderDao getInstance() {
+        return Singleton.INSTANCE;
     }
 
     @Override
     protected BookOrder mapResultSet(ResultSet result) throws SQLException, DAOException {
-        final Optional<LibraryUser> optionalLibraryUser = userDaoService.findById(result.getLong(READER_COLUMN));
-        final Optional<Book> optionalBook = bookDaoService.findById(result.getLong(BOOK_COLUMN));
+        final Optional<LibraryUser> optionalLibraryUser = USER_DAO_SERVICE.findById(result.getLong(READER_COLUMN));
+        final Optional<Book> optionalBook = BOOK_DAO_SERVICE.findById(result.getLong(BOOK_COLUMN));
         final LocalDate orderDate = result.getDate(ORDER_DATE_COLUMN).toLocalDate();
-        final BookOrder orderFromResultSet = new BookOrder(optionalLibraryUser.orElseThrow(DAOException::new), optionalBook.orElseThrow(DAOException::new), orderDate);
-        orderFromResultSet.setId(result.getLong(ID_COLUMN));
-        return orderFromResultSet;
+        return new BookOrder(result.getLong(ID_COLUMN), optionalLibraryUser.orElseThrow(DAOException::new), optionalBook.orElseThrow(DAOException::new), orderDate);
     }
 
     @Override
     protected void setSavePrepareStatementValues(BookOrder entity, PreparedStatement savePreparedStatement) throws SQLException, DAOException {
-        savePreparedStatement.setLong(1, userDaoService.save(entity.getUser()).getId());
-        savePreparedStatement.setLong(2, bookDaoService.save(entity.getBook()).getId());
+        savePreparedStatement.setLong(1, USER_DAO_SERVICE.save(entity.getUser()).getId());
+        savePreparedStatement.setLong(2, BOOK_DAO_SERVICE.save(entity.getBook()).getId());
         savePreparedStatement.setDate(3, Date.valueOf(entity.getOrderDate()));
     }
 
@@ -69,5 +71,14 @@ public class OrderDaoService extends AbstractDao<BookOrder> implements OrderDao 
     @Override
     public List<BookOrder> findOrdersByOrderDate(LocalDate orderDate) throws DAOException {
         return findAll().stream().filter(bookOrder -> bookOrder.getOrderDate().equals(orderDate)).collect(Collectors.toList());
+    }
+
+    @Override
+    protected BookOrder assignIdToSavedEntity(Long id, BookOrder entity) {
+        return new BookOrder(id, entity.getUser(), entity.getBook(), entity.getOrderDate());
+    }
+
+    private static class Singleton {
+        private static final MySQLOrderDao INSTANCE = new MySQLOrderDao();
     }
 }

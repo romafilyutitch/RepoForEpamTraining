@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Book implements DbEntity {
-    private Long id;
+    private final Long id;
     private final String name;
     private final BookAuthor author;
     private final BookGenre genre;
@@ -12,13 +12,18 @@ public class Book implements DbEntity {
     private final int pagesAmount;
     private final String description;
 
-    public Book(String name, BookAuthor author, BookGenre genre, LocalDate date, int pagesAmount, String description) {
+    public Book(Long id, String name, BookAuthor author, BookGenre genre, LocalDate date, int pagesAmount, String description) {
+        this.id = id;
         this.name = name;
         this.author = author;
         this.genre = genre;
         this.date = date;
         this.pagesAmount = pagesAmount;
         this.description = description;
+    }
+
+    public Book(String name, BookAuthor author, BookGenre genre, LocalDate date, int pagesAmount, String description) {
+        this(null, name, author, genre, date, pagesAmount, description);
     }
 
     @Override
@@ -50,63 +55,43 @@ public class Book implements DbEntity {
         return description;
     }
 
-    @Override
-    public void setId(Long id) {
-        if (this.getId() != null) {
-            throw new IllegalStateException("id already assigned");
-        }
-        this.id = id;
-    }
-
     public Book updateName(String newName) {
         if (newName == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final Book updatedBook = new Book(newName, author, genre, date, pagesAmount, description);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, newName, author, genre, date, pagesAmount, description);
     }
 
     public Book updateAuthor(BookAuthor newAuthor) {
         if (newAuthor == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final Book updatedBook = new Book(name, newAuthor, genre, date, pagesAmount, description);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, name, newAuthor, genre, date, pagesAmount, description);
     }
 
     public Book updateGenre(BookGenre newGenre) {
         if (newGenre == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final Book updatedBook = new Book(name, author, newGenre, date, pagesAmount, description);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, name, author, newGenre, date, pagesAmount, description);
     }
 
     public Book updateDate(LocalDate newDate) {
         if (newDate == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final Book updatedBook = new Book(name, author, genre, newDate, pagesAmount, description);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, name, author, genre, newDate, pagesAmount, description);
     }
 
     public Book updatePagesAmount(int newPagesAmount) {
-        final Book updatedBook = new Book(name, author, genre, date, newPagesAmount, description);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, name, author, genre, date, newPagesAmount, description);
     }
 
     public Book updateDescription(String newDescription) {
         if (newDescription == null) {
-            throw new NullPointerException();
+            return this;
         }
-        final Book updatedBook = new Book(name, author, genre, date, pagesAmount, newDescription);
-        updatedBook.setId(id);
-        return updatedBook;
+        return new Book(id, name, author, genre, date, pagesAmount, newDescription);
     }
 
     @Override

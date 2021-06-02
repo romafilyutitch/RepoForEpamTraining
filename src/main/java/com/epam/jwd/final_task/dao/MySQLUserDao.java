@@ -13,9 +13,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class UserDaoService extends AbstractDao<LibraryUser> implements UserDao {
-    private final SubscriptionDaoService subscriptionDaoService = new SubscriptionDaoService();
-    private final UserRoleDaoService roleDaoService = new UserRoleDaoService();
+public class MySQLUserDao extends AbstractDao<LibraryUser> implements UserDao {
+    private static final MySQLSubscriptionDao SUBSCRIPTION_DAO = MySQLSubscriptionDao.getInstance();
+    private static final MySQLRoleDao ROLE_DAO = MySQLRoleDao.getInstance();
 
     private static final String ID_COLUMN = "id";
     private static final String LOGIN_COLUMN = "login";
@@ -27,19 +27,22 @@ public class UserDaoService extends AbstractDao<LibraryUser> implements UserDao 
     private static final String UPDATE_PREPARED_SQL = "update lib_user set login = ?, password = ?, role = ?, subscription = ? where id = ?";
     private static final String DELETE_PREPARED_SQL = "delete from lib_user where id = ?";
 
-    public UserDaoService() {
+    private MySQLUserDao() {
         super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL, DELETE_PREPARED_SQL);
     }
+
+    public static MySQLUserDao getInstance() {
+        return Singleton.INSTANCE;
+    }
+
     @Override
     protected LibraryUser mapResultSet(ResultSet result) throws SQLException, DAOException {
-        final Optional<UserRole> optionalUserRole = roleDaoService.findById(result.getLong(ROLE_COLUMN));
-        final Optional<Subscription> optionalSubscription = subscriptionDaoService.findById(result.getLong(SUBSCRIPTION_COLUMN));
+        final Optional<UserRole> optionalUserRole = ROLE_DAO.findById(result.getLong(ROLE_COLUMN));
+        final Optional<Subscription> optionalSubscription = SUBSCRIPTION_DAO.findById(result.getLong(SUBSCRIPTION_COLUMN));
         final Long id = result.getLong(ID_COLUMN);
         final String login = result.getString(LOGIN_COLUMN);
         final String password = result.getString(PASSWORD_COLUMN);
-        final LibraryUser userFromResultSet = new LibraryUser(login, password, optionalUserRole.orElseThrow(DAOException::new), optionalSubscription.orElseThrow(DAOException::new));
-        userFromResultSet.setId(id);
-        return userFromResultSet;
+        return new LibraryUser(id, login, password, optionalUserRole.orElseThrow(DAOException::new), optionalSubscription.orElseThrow(DAOException::new));
     }
 
     @Override
@@ -48,7 +51,7 @@ public class UserDaoService extends AbstractDao<LibraryUser> implements UserDao 
         savePreparedStatement.setString(2, entity.getPassword());
         savePreparedStatement.setLong(3, entity.getRole().getId());
         if (entity.getUserSubscription() != null) {
-            subscriptionDaoService.save(entity.getUserSubscription());
+            SUBSCRIPTION_DAO.save(entity.getUserSubscription());
             savePreparedStatement.setLong(4, entity.getUserSubscription().getId());
         } else {
             savePreparedStatement.setNull(4, Types.INTEGER);
@@ -75,7 +78,11 @@ public class UserDaoService extends AbstractDao<LibraryUser> implements UserDao 
     }
 
     @Override
-    protected Optional<LibraryUser> findSaved(LibraryUser user) throws DAOException {
-        return findAll().stream().filter(userFromTable -> userFromTable.getLogin().equalsIgnoreCase(user.getLogin())).findAny();
+    protected LibraryUser assignIdToSavedEntity(Long id, LibraryUser entity) {
+        return new LibraryUser(id, entity.getLogin(), entity.getPassword(), entity.getRole(), entity.getUserSubscription());
+    }
+
+    private static class Singleton {
+        private static final MySQLUserDao INSTANCE = new MySQLUserDao();
     }
 }
