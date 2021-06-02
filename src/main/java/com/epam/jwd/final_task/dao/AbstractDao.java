@@ -3,6 +3,8 @@ package com.epam.jwd.final_task.dao;
 import com.epam.jwd.final_task.connectionPool.ConnectionPool;
 import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.DbEntity;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +16,8 @@ import java.util.List;
 import java.util.Optional;
 
 public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
+    private static final Logger logger = LogManager.getLogger(AbstractDao.class);
+
     private static final String GENERATED_KEY_COLUMN = "GENERATED_KEY";
     public static final String SAVE_OPERATION_UNSUPPORTED_MESSAGE = "Save entity operation is unsupported for this service";
     public static final String FIND_OPERATION_UNSUPPORTED_MESSAGE = "Find entities operation is unsupported for this service";
@@ -60,8 +64,11 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
             ResultSet generatedKeyResultSet = saveStatement.getGeneratedKeys();
             generatedKeyResultSet.next();
             Long id = generatedKeyResultSet.getLong(GENERATED_KEY_COLUMN);
-            return assignIdToSavedEntity(id, entity);
+            final T savedEntity = assignIdToSavedEntity(id, entity);
+            logger.info("Entity was saved " + savedEntity);
+            return savedEntity;
         } catch (SQLException e) {
+            logger.error("Error with in saving entity " + entity);
             throw new DAOException(e);
         }
     }
@@ -88,8 +95,10 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
              PreparedStatement updateStatement = connection.prepareStatement(updateSql)) {
             setUpdatePreparedStatementValues(entity, updateStatement);
             updateStatement.executeUpdate();
+            logger.info("Entity was updated " + entity);
             return entity;
         } catch (SQLException e) {
+            logger.error("Error with updating entity" + entity);
             throw new DAOException(e);
         }
     }
@@ -103,7 +112,9 @@ public abstract class AbstractDao<T extends DbEntity> implements Dao<T> {
              PreparedStatement deleteStatement = connection.prepareStatement(deleteSql)) {
             deleteStatement.setLong(1, id);
             deleteStatement.executeUpdate();
+            logger.info("Entity with id " + id + " was deleted");
         } catch (SQLException e) {
+            logger.error("Error with deleting entity with id" + id);
             throw new DAOException(e);
         }
     }
