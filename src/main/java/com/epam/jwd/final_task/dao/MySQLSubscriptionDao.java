@@ -22,7 +22,7 @@ public class MySQLSubscriptionDao extends AbstractDao<Subscription> implements S
     public static final String END_DATE_COLUMN = "end_date";
 
     private MySQLSubscriptionDao() {
-       super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL, DELETE_PREPARED_SQL);
+       super(FIND_ALL_SQL, SAVE_PREPARED_SQL, UPDATE_PREPARED_SQL);
     }
 
     public static MySQLSubscriptionDao getInstance() {
@@ -45,11 +45,6 @@ public class MySQLSubscriptionDao extends AbstractDao<Subscription> implements S
         updatePreparedStatement.setDate(1, Date.valueOf(entity.getStartDate()));
         updatePreparedStatement.setDate(2, Date.valueOf(entity.getEndDate()));
         updatePreparedStatement.setLong(3, entity.getId());
-    }
-
-    @Override
-    protected Subscription assignIdToSavedEntity(Long id, Subscription entity) {
-        return new Subscription(id, entity.getStartDate(), entity.getEndDate());
     }
 
     @Override

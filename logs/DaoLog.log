@@ -1,1 +1,12 @@
-2021-06-03 02:02:53 INFO  AbstractDao - Entity was saved BookGenre{id=13, name='tutorials'}
+2021-06-03 15:52:57 INFO  AbstractDao - Entity was saved LibraryUser{id=83, login='Van', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:52:57 INFO  AbstractDao - Entity with id 83 was deleted
+2021-06-03 15:52:57 INFO  AbstractDao - Entity with id 83 was deleted
+2021-06-03 15:52:58 INFO  AbstractDao - Entity was saved LibraryUser{id=84, login='Van', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:52:59 INFO  AbstractDao - Entity with id 84 was deleted
+2021-06-03 15:52:59 INFO  AbstractDao - Entity was saved LibraryUser{id=85, login='Van', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:52:59 INFO  AbstractDao - Entity was updated LibraryUser{id=85, login='Alex 3000', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:52:59 INFO  AbstractDao - Entity with id 85 was deleted
+2021-06-03 15:52:59 INFO  AbstractDao - Entity was saved LibraryUser{id=86, login='Van', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:52:59 INFO  AbstractDao - Entity with id 86 was deleted
+2021-06-03 15:53:00 INFO  AbstractDao - Entity was saved LibraryUser{id=87, login='Van', password='AAA', role=READER, userSubscription=null}
+2021-06-03 15:53:00 INFO  AbstractDao - Entity with id 87 was deleted

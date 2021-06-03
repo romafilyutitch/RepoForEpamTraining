@@ -52,9 +52,11 @@ public class MySQLBookDao extends AbstractDao<Book> implements BookDao {
 
     @Override
     protected void setSavePrepareStatementValues(Book entity, PreparedStatement savePreparedStatement) throws SQLException, DAOException {
+        final BookAuthor bookAuthor = BOOK_AUTHOR_DAO.save(entity.getAuthor());
+        final BookGenre bookGenre = BOOK_GENRE_DAO.save(entity.getGenre());
         savePreparedStatement.setString(1, entity.getName());
-        savePreparedStatement.setLong(2, BOOK_AUTHOR_DAO.save(entity.getAuthor()).getId());
-        savePreparedStatement.setLong(3, BOOK_GENRE_DAO.save(entity.getGenre()).getId());
+        savePreparedStatement.setLong(2, bookAuthor.getId());
+        savePreparedStatement.setLong(3, bookGenre.getId());
         savePreparedStatement.setDate(4, Date.valueOf(entity.getDate()));
         savePreparedStatement.setInt(5, entity.getPagesAmount());
         savePreparedStatement.setString(6, entity.getDescription());
@@ -91,10 +93,7 @@ public class MySQLBookDao extends AbstractDao<Book> implements BookDao {
         return findAll().stream().filter(book -> book.getDate().getYear() == year).collect(Collectors.toList());
     }
 
-    @Override
-    protected Book assignIdToSavedEntity(Long id, Book entity) {
-        return new Book(id, entity.getName(), entity.getAuthor(), entity.getGenre(), entity.getDate(), entity.getPagesAmount(), entity.getDescription());
-    }
+
 
     private static class Singleton {
         private static final MySQLBookDao INSTANCE = new MySQLBookDao();

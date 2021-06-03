@@ -25,6 +25,16 @@ public class MySQLAuthorDao extends AbstractDao<BookAuthor> implements AuthorDao
     }
 
     @Override
+    public BookAuthor save(BookAuthor entity) throws DAOException {
+        Optional<BookAuthor> optionalBookAuthor = getByName(entity.getName());
+        if (optionalBookAuthor.isPresent()) {
+            return optionalBookAuthor.get();
+        } else {
+            return super.save(entity);
+        }
+    }
+
+    @Override
     protected BookAuthor mapResultSet(ResultSet result) throws SQLException {
         return new BookAuthor(result.getLong(ID_COLUMN), result.getString(NAME_COLUMN));
     }
@@ -40,10 +50,7 @@ public class MySQLAuthorDao extends AbstractDao<BookAuthor> implements AuthorDao
         updatePreparedStatement.setLong(2, entity.getId());
     }
 
-    @Override
-    protected BookAuthor assignIdToSavedEntity(Long id, BookAuthor entity) {
-        return new BookAuthor(id, entity.getName());
-    }
+
 
     @Override
     public Optional<BookAuthor> getByName(String authorName) throws DAOException {

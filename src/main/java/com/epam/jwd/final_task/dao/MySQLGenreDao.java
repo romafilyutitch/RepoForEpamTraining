@@ -26,6 +26,16 @@ public class MySQLGenreDao extends AbstractDao<BookGenre> implements GenreDao {
     }
 
     @Override
+    public BookGenre save(BookGenre entity) throws DAOException {
+        Optional<BookGenre> optionalBookGenre = getByName(entity.getName());
+        if (optionalBookGenre.isPresent()) {
+            return optionalBookGenre.get();
+        } else {
+            return super.save(entity);
+        }
+    }
+
+    @Override
     protected BookGenre mapResultSet(ResultSet result) throws SQLException {
         return new BookGenre(result.getLong(ID_COLUMN), result.getString(NAME_COLUMN));
     }
@@ -40,12 +50,6 @@ public class MySQLGenreDao extends AbstractDao<BookGenre> implements GenreDao {
         updatePreparedStatement.setString(1, entity.getName());
         updatePreparedStatement.setLong(2, entity.getId());
     }
-
-    @Override
-    protected BookGenre assignIdToSavedEntity(Long id, BookGenre entity) {
-        return new BookGenre(id, entity.getName());
-    }
-
 
     @Override
     public Optional<BookGenre> getByName(String genreName) throws DAOException {

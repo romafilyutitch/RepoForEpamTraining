@@ -36,11 +36,6 @@ public class MySQLRoleDao extends AbstractDao<UserRole> implements RoleDao {
     }
 
     @Override
-    protected UserRole assignIdToSavedEntity(Long id, UserRole entity) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public Optional<UserRole> findByName(String userRoleName) throws DAOException {
         return findAll().stream().filter(role -> role.getRoleName().equals(userRoleName)).findAny();
     }

@@ -5,18 +5,18 @@ import java.util.Objects;
 
 public class BookOrder implements DbEntity {
     private final Long id;
-    private final LibraryUser user;
+    private final User user;
     private final Book book;
     private final LocalDate orderDate;
 
-    public BookOrder(Long id, LibraryUser user, Book book, LocalDate orderDate) {
+    public BookOrder(Long id, User user, Book book, LocalDate orderDate) {
         this.id = id;
         this.user = user;
         this.book = book;
         this.orderDate = orderDate;
     }
 
-    public BookOrder(LibraryUser user, Book book, LocalDate orderDate) {
+    public BookOrder(User user, Book book, LocalDate orderDate) {
         this(null, user, book, orderDate);
     }
 
@@ -25,7 +25,7 @@ public class BookOrder implements DbEntity {
         return id;
     }
 
-    public LibraryUser getUser() {
+    public User getUser() {
         return user;
     }
 
