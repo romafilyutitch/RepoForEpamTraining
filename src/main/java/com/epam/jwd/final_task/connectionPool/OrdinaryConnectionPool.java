@@ -1,6 +1,5 @@
 package com.epam.jwd.final_task.connectionPool;
 
-import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
 import com.epam.jwd.final_task.properties.ConnectionPoolProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,6 +1,5 @@
 package com.epam.jwd.final_task.dao;
 
-import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.BookOrder;
 
 import java.time.LocalDate;

@@ -1,8 +1,7 @@
 package com.epam.jwd.final_task.dao;
 
 import com.epam.jwd.final_task.connectionPool.ConnectionPool;
-import com.epam.jwd.final_task.exception.ConnectionPoolInitializationException;
-import com.epam.jwd.final_task.exception.DAOException;
+import com.epam.jwd.final_task.connectionPool.ConnectionPoolInitializationException;
 import com.epam.jwd.final_task.model.BookOrder;
 import org.junit.After;
 import org.junit.AfterClass;

@@ -1,7 +1,6 @@
 package com.epam.jwd.final_task.dao;
 
 import com.epam.jwd.final_task.connectionPool.ConnectionPool;
-import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.DbEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

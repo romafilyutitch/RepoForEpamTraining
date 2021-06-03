@@ -1,4 +1,4 @@
-package com.epam.jwd.final_task.exception;
+package com.epam.jwd.final_task.dao;
 
 public class DAOException extends Exception{
     public DAOException() {

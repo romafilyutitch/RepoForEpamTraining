@@ -1,6 +1,5 @@
 package com.epam.jwd.final_task.dao;
 
-import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.Book;
 import com.epam.jwd.final_task.model.BookAuthor;
 import com.epam.jwd.final_task.model.BookGenre;
@@ -63,7 +62,7 @@ public class MySQLBookDao extends AbstractDao<Book> implements BookDao {
     }
 
     @Override
-    protected void setUpdatePreparedStatementValues(Book entity, PreparedStatement updatePreparedStatement) throws SQLException, DAOException {
+    protected void setUpdatePreparedStatementValues(Book entity, PreparedStatement updatePreparedStatement) throws SQLException {
         updatePreparedStatement.setString(1, entity.getName());
         updatePreparedStatement.setLong(2, entity.getAuthor().getId());
         updatePreparedStatement.setLong(3, entity.getGenre().getId());

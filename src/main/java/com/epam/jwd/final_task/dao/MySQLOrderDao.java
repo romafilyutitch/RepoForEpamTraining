@@ -1,6 +1,5 @@
 package com.epam.jwd.final_task.dao;
 
-import com.epam.jwd.final_task.exception.DAOException;
 import com.epam.jwd.final_task.model.Book;
 import com.epam.jwd.final_task.model.BookOrder;
 import com.epam.jwd.final_task.model.User;
@@ -15,8 +14,8 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class MySQLOrderDao extends AbstractDao<BookOrder> implements OrderDao {
-    private static final BookDao BOOK_DAO_SERVICE = DaoFactory.getInstance().getBookDao();
-    private static final UserDao USER_DAO_SERVICE = DaoFactory.getInstance().getUserDao();
+    private static final MySQLBookDao BOOK_DAO_SERVICE = MySQLBookDao.getInstance();
+    private static final MySQLUserDao USER_DAO_SERVICE = MySQLUserDao.getInstance();
 
     private static final String ID_COLUMN = "id";
     private static final String READER_COLUMN = "reader";
